@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 const App = () => {
   return (
     <Router>
-    <Navbar/>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-kreatewave" element={<About />} />
