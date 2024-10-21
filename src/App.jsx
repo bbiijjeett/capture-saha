@@ -5,6 +5,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/about-kreatewave" element={<About />} />
         <Route path="/our-services" element={<Services />} />
         <Route path="/say-hello" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   )
