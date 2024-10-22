@@ -4,6 +4,7 @@ import max  from '../assets/img/max.webp'
 import letter  from '../assets/img/letter.webp'
 import phone  from '../assets/img/phone.webp'
 import emoji from '../assets/img/emoji.webp'
+import map from '../assets/img/map.jpeg'
 import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 
@@ -35,9 +36,9 @@ const Contact = () => {
 
   return ( 
     <section className='flex flex-col gap-5 min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D] '>
-      <div className='flex-col h-[80vh] md:h-[70vh] justify-between  md:flex-row bg-white  rounded-3xl p-5 text-[#333435]  flex overflow-hidden'>
+      <div className='flex-col h-[80vh] md:h-[70vh] justify-between  md:flex-row bg-[#FAF7F0]  rounded-3xl p-5 text-[#333435]  flex overflow-hidden'>
         <div className='w-1/2 flex flex-col justify-between'>
-          <div className='hover:text-red-500 transition-all duration-300 text-7xl hover:scale-95 cursor-pointer'>
+          <div className='hover:text-red-500 transition-all duration-300 text-7xl md:text-8xl hover:scale-95 cursor-pointer'>
             <a href='https://wa.me/919366797368'>
               <p className=' font-bold'>SAY</p>
               <p className=' font-bold'>HELLO<span className='text-red-500'>.</span></p>
@@ -90,9 +91,9 @@ const Contact = () => {
           />
         </div>
 
-        <div className='w-1/2 flex flex-col justify-around md:flex-col '>
+        <div className='w-1/2 flex flex-col md:flex-col'>
           <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-2xl'>Social</h1>
+            <h1 className='font-bold text-4xl'>Social</h1>
             <a 
               href='#' 
               className='font-light hover:text-red-500' 
@@ -112,7 +113,7 @@ const Contact = () => {
             
           </div>
           <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-2xl'>Contact</h1>
+            <h1 className='font-bold text-4xl'>Contact</h1>
             <a 
               href='#' 
               className='font-light hover:text-red-500' 
@@ -132,8 +133,9 @@ const Contact = () => {
             
           </div>
           <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-2xl'>Address</h1>
+            <h1 className='font-bold text-4xl'>Address</h1>
             <p className='font-light'>Bengaluru, Karnataka</p>
+            <img className='rounded-3xl h-32 w-64 hover:scale-105 shadow-lg transition-all duration-300' src={map} />
           </div>
         </div>
       </div>
