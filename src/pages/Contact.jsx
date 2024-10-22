@@ -35,7 +35,7 @@ const Contact = () => {
 
   return ( 
     <section className='flex flex-col gap-5 min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D] '>
-      <div className='flex-col h-[80vh] md:h-[70vh] justify-between  md:flex-row bg-[#333435]  rounded-3xl p-5 text-white flex overflow-hidden'>
+      <div className='flex-col h-[80vh] md:h-[70vh] justify-between  md:flex-row bg-white  rounded-3xl p-5 text-[#333435]  flex overflow-hidden'>
         <div className='w-1/2 flex flex-col justify-between'>
           <div className='hover:text-red-500 transition-all duration-300 text-7xl hover:scale-95 cursor-pointer'>
             <a href='https://wa.me/919366797368'>
@@ -90,7 +90,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className='w-1/2 flex flex-col justify-around md:flex-row'>
+        <div className='w-1/2 flex flex-col justify-around md:flex-col '>
           <div className='p-2 flex flex-col gap-2'>
             <h1 className='font-bold text-2xl'>Social</h1>
             <a 
