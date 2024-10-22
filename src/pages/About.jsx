@@ -1,5 +1,10 @@
-import Flywithus from '@/components/Flywithus'
-import React from 'react'
+import Flywithus from '@/components/Flywithus';
+import React from 'react';
+import bijeet from '../assets/img/bijeet.webp';
+import somo from '../assets/img/somo.webp';
+import adit from '../assets/img/adit.webp';
+import soubhick from '../assets/img/soubhick.webp';
+import ambar from '../assets/img/ambar.jpg';
 
 const About = () => {
   return (
@@ -95,14 +100,14 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src='https://framerusercontent.com/images/vW2W5WyGYGBPp2yxSETCHJxyz3M.jpeg' />
+                <img className='h-[20rem] w-[20rem] rounded-full' src={somo} />
                 <p>Name</p>
                 <a>@instagram</a>
               </div>
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src='https://framerusercontent.com/images/vW2W5WyGYGBPp2yxSETCHJxyz3M.jpeg' />
+                <img className='h-[20rem] w-[20rem] rounded-full' src={bijeet} />
                 <p>Name</p>
                 <a>@instagram</a>
               </div>
@@ -110,7 +115,7 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src='https://framerusercontent.com/images/vW2W5WyGYGBPp2yxSETCHJxyz3M.jpeg' />
+                <img className='h-[20rem] w-[20rem] rounded-full' src={adit} />
                 <p>Name</p>
                 <a>@instagram</a>
               </div>
@@ -122,14 +127,14 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src='https://framerusercontent.com/images/vW2W5WyGYGBPp2yxSETCHJxyz3M.jpeg' />
+                <img className='h-[20rem] w-[20rem] rounded-full' src={soubhick} />
                 <p>Name</p>
                 <a>@instagram</a>
               </div>
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src='https://framerusercontent.com/images/vW2W5WyGYGBPp2yxSETCHJxyz3M.jpeg' />
+                <img className='h-[20rem] w-[20rem] rounded-full' src={ambar} />
                 <p>Name</p>
                 <a>@instagram</a>
               </div>

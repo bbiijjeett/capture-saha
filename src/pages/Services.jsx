@@ -1,5 +1,9 @@
 import React,{useState} from 'react';
-import Flywithus from '@/components/Flywithus'
+import Flywithus from '@/components/Flywithus';
+import CustomButton  from '@/components/CustomButton';
+import { MdRadioButtonChecked } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 const services = [
   {
@@ -15,6 +19,81 @@ const services = [
     "description": "A service that provides creative graphic design and illustrations, including logos, marketing materials, and custom artwork, to enhance brand visuals."
   }
 ]
+
+const socialMediaPackages = [
+  {
+    "name": "12 Social Media Creatives/m",
+  },
+  {
+    "name": "Custom Strategy"
+  },
+  {
+    "name": "Dedicated SM Manager"
+  },
+  {
+    "name": "Dedicated Copywriter"
+  },
+  {
+    "name": "Unlimited Revisions"
+  },
+  {
+    "name": "Pause Anytime"
+  },
+  {
+    "name": "Performance Report/m",
+  }
+];
+
+const litePackage = [
+  {
+    "name": "2 Packs of Your Choice"
+  },
+  {
+    "name": "48hrs Turn Around Time"
+  },
+  {
+    "name": "Dedicated Team"
+  },
+  {
+    "name": "Pause Anytime"
+  },
+  {
+    "name": "Single Milestone/48hrs",
+  },
+  {
+    "name": "Post-Delivery Support"
+  },
+  {
+    "name": "Performance Report/m",
+  }
+];
+
+const customPackage = [
+  {
+    "name": "Bespoke project proposal"
+  },
+  {
+    "name": "Create your own Pack"
+  },
+  {
+    "name": "Custom Project Timeline"
+  },
+  {
+    "name": "Delivered in Milestones"
+  },
+  {
+    "name": "Fixed scope of work"
+  },
+  {
+    "name": "Weekly Design Sync"
+  },
+  {
+    "name": "Performance Report/m",
+  },
+  {
+    "name": "Post-Delivery Support"
+  }
+];
 
 const Accordion = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -94,19 +173,90 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col gap-5 my-10'>
+      <div className='flex flex-col h-[110vh] gap-5 my-10'>
         <h1 className='font-bold text-7xl text-white text-center'>Pricing</h1>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div className='flex h-full px-28 justify-center items-center gap-5'>
+          <div className='bg-white h-full w-1/3 rounded-xl'>
+            <div className='flex flex-col p-10'>
+              <p className='font-light text-lg capitalize'>Social media package</p>
+              <h1 className='font-bold text-5xl'>$397/m</h1>
+              <p className='font-normal text-xl'>Perfect to get started with kyte</p>
+            </div>
+            <div className='flex flex-col justify-center items-center px-10 mb-5'>
+              <CustomButton  title={'Get Started'} />
+            </div>
+            <div className='flex flex-col justify-center items-center px-10 gap-2'>
+              {
+                socialMediaPackages.map((item, index) => (
+                  <div key={index} className='bg-[#E6E6E6] w-full text-black px-4 py-2 rounded-full font-semibold text-center'>
+                    <p className='font-light text-lg flex place-items-center'><MdRadioButtonChecked size={24} style={{ marginRight: '5px' }} />{item.name}</p>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+          <div className='bg-white h-full w-1/3 rounded-xl'>
+            <div className='flex flex-col p-10'>
+              <p className='font-light text-lg capitalize'>Lite Package</p>
+              <h1 className='font-bold text-5xl'>$1997/m</h1>
+              <p className='font-normal text-xl'>For Small And Midsize Business</p>
+            </div>
+            <div className='flex flex-col justify-center items-center px-10 mb-5'>
+              <CustomButton  title={'Get Started'} />
+            </div>
+            <div className='flex flex-col justify-center items-center px-10 gap-2'>
+              {
+                litePackage.map((item, index) => (
+                  <div key={index} className='bg-neutral-200 w-full text-black px-4 py-2 rounded-full font-semibold text-center'>
+                    <p className='font-light text-lg flex place-items-center'><MdRadioButtonChecked size={24} style={{ marginRight: '5px' }} />{item.name}</p>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+          <div className='bg-white h-full w-1/3 rounded-xl'>
+            <div className='flex flex-col p-10'>
+              <p className='font-light text-lg capitalize'>Single project</p>
+              <h1 className='font-bold text-5xl'>Custom </h1>
+              <p className='font-normal text-xl'>Cost Effective Tailored Solutions</p>
+            </div>
+            <div className='flex flex-col justify-center items-center px-10 gap-3 mb-5'>
+              <CustomButton  title={'Request Quote'} />
+              <CustomButton  title={'Book Discovery Session'} />
+            </div>
+            <div className='flex flex-col justify-center items-center px-10 gap-2'>
+              {
+                customPackage.map((item, index) => (
+                  <div key={index} className='bg-neutral-200 w-full text-black px-4 py-2 rounded-full font-semibold text-center'>
+                    <p className='font-light text-lg flex place-items-center'><MdRadioButtonChecked size={24} style={{ marginRight: '5px' }} />{item.name}</p>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
         </div>
       </div>
       <div className='flex flex-col gap-5 my-10'>
         <h1 className='font-bold text-7xl text-white text-center'>Still Unsure?</h1>
-        <div>
-          <div></div>
-          <div></div>
+        <div className='flex flex-row  gap-5 px-28'>
+          <div className='w-1/2 bg-[#FAF7F0] rounded-2xl p-10'>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black p-2 mb-2">
+              <FaPhoneAlt className="text-white" size={25} />
+            </div>
+            <p className='font-light text-sm'>WE'LL GIVE YOU A</p>
+            <h1 className=''>Personalised Tour</h1>
+            <p className=''>We will introduce you to our extensive services and answer all your questions!</p>
+            <CustomButton  title={'Book Discovery Session'} />
+          </div>
+          <div className='w-1/2 bg-[#FAF7F0]  rounded-2xl p-10'>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black p-2 mb-2">
+              <IoIosMail className="text-white" size={25} />
+            </div>
+            <p className='font-light text-sm'>WE'LL ANSWER ALL YOUR  </p>
+            <h1>Questions!</h1>
+            <p>Share your questions with us via email and get answers to questions on pricing or services from our experts!</p>
+            <CustomButton  title={'Share Your Questions'} />
+          </div>
         </div>
       </div>
       <Flywithus/>
