@@ -1,144 +1,74 @@
-import Footer from '@/components/Footer'
-import camera  from '../assets/img/camera.webp'
-import max  from '../assets/img/max.webp'
-import letter  from '../assets/img/letter.webp'
-import phone  from '../assets/img/phone.webp'
-import emoji from '../assets/img/emoji.webp'
-import React, { useRef } from 'react';
-import { gsap } from 'gsap';
+import React from 'react'
 
 const About = () => {
-
-  const cameraRef = useRef(null);
-  const maxRef = useRef(null);
-  const letterRef = useRef(null);
-  const phoneRef = useRef(null);
-
-  const handleMouseEnter = (ref) => {
-    gsap.to(ref.current, { 
-      display: 'block',
-      opacity: 1, 
-      y: 0, 
-      duration: 0.5, 
-      ease: "power2.out" 
-    });
-  };
-
-  const handleMouseLeave = (ref) => {
-    gsap.to(ref.current, { 
-      opacity: 0, 
-      y: 20, 
-      duration: 0.5, 
-      ease: "power2.out" 
-    });
-  };
-
-  return ( 
+  return (
     <section className='flex flex-col gap-5 min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D] '>
-      <div className='flex-col h-[80vh] md:h-[70vh] justify-between  md:flex-row bg-[#333435]  rounded-3xl p-5 text-white flex overflow-hidden'>
-        <div className='w-1/2 flex flex-col justify-between'>
-          <div className='hover:text-red-500 transition-all duration-300 text-7xl hover:scale-95 cursor-pointer'>
-            <a href='https://wa.me/919366797368'>
-              <p className=' font-bold'>SAY</p>
-              <p className=' font-bold'>HELLO<span className='text-red-500'>.</span></p>
-            </a>
-          </div>
-          <div className='hidden md:flex'>
-            <img src={emoji} className='animate-spin' alt='rotating emoji' />
-          </div>
+
+      <div className='bg-[#FAF7F0] rounded-3xl mt-5 py-2'>
+        <div className='flex flex-col gap-5 items-center justify-center'>
+          <h1 className='text-5xl font-bold'>Design Driven</h1>
+          <p className='font-light text-lg text-center'>We are the architects of brand strategy, crafting visual identities and narratives that resonate with audiences.</p>
         </div>
-  
-        <div className='w-1/2 hidden lg:flex justify-center items-center relative translate-y-32'>
-          {/* Image for Instagram */}
-          <img 
-            ref={cameraRef} 
-            className='absolute hidden opacity-0 translate-y-5' 
-            src={camera} 
-            alt="Camera" 
-            // onMouseEnter={() => handleMouseEnter(cameraRef)} 
-            // onMouseLeave={() => handleMouseLeave(cameraRef)} 
-          />
-
-          {/* Image for LinkedIn */}
-          <img 
-            ref={maxRef} 
-            className='absolute hidden opacity-0 translate-y-5' 
-            src={max} 
-            alt="Max" 
-            // onMouseEnter={() => handleMouseEnter(maxRef)} 
-            // onMouseLeave={() => handleMouseLeave(maxRef)} 
-          />
-
-          {/* Image for Email */}
-          <img 
-            ref={letterRef} 
-            className='absolute hidden opacity-0 translate-y-5' 
-            src={letter} 
-            alt="Letter" 
-            // onMouseEnter={() => handleMouseEnter(letterRef)} 
-            // onMouseLeave={() => handleMouseLeave(letterRef)} 
-          />
-
-          {/* Image for Phone */}
-          <img 
-            ref={phoneRef} 
-            className='absolute hidden opacity-0 translate-y-5' 
-            src={phone} 
-            alt="Phone" 
-            // onMouseEnter={() => handleMouseEnter(phoneRef)} 
-            // onMouseLeave={() => handleMouseLeave(phoneRef)} 
-          />
-        </div>
-
-        <div className='w-1/2 flex flex-col justify-around md:flex-row'>
-          <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-2xl'>Social</h1>
-            <a 
-              href='#' 
-              className='font-light hover:text-red-500' 
-              onMouseEnter={() => handleMouseEnter(cameraRef)} 
-              onMouseLeave={() => handleMouseLeave(cameraRef)}
-            >
-              Instagram
-            </a>
-            <a 
-              href='#' 
-              className='font-light hover:text-red-500' 
-              onMouseEnter={() => handleMouseEnter(maxRef)} 
-              onMouseLeave={() => handleMouseLeave(maxRef)}
-            >
-              Linked.in
-            </a>
+        <div id='bentoGrid' className='p-5'>
+          <div className="flex h-[60vh] w-full items-center justify-center">
+            <div className="grid h-full w-full gap-4 p-2 grid-cols-4 grid-rows-4 rounded-lg ">
             
-          </div>
-          <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-2xl'>Contact</h1>
-            <a 
-              href='#' 
-              className='font-light hover:text-red-500' 
-              onMouseEnter={() => handleMouseEnter(letterRef)} 
-              onMouseLeave={() => handleMouseLeave(letterRef)}
-            >
-              hello@kreatewave.com
-            </a>
-            <a 
-              href='#' 
-              className='font-light hover:text-red-500' 
-              onMouseEnter={() => handleMouseEnter(phoneRef)} 
-              onMouseLeave={() => handleMouseLeave(phoneRef)}
-            >
-              +91-9999999999
-            </a>
+              <div 
+                className="col-span-1 row-span-2 bg-[#232323] rounded-3xl shadow-md justify-between flex p-5 text-white flex-col"
+              > 
+                <div>
+                  <h1 className='text-5xl'>50+</h1>
+                  <h3 className='text-2xl'>Projects</h3>
+                </div>
+                <p className='text-gray-500'>Across Branding, Packaging, SEO, Product design and development! </p>
+              </div>
             
-          </div>
-          <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-2xl'>Address</h1>
-            <p className='font-light'>Bengaluru, Karnataka</p>
+              <div 
+                className="col-span-1 row-span-4 bg-[#4D28BD] rounded-3xl shadow-md justify-between flex p-5 text-white flex-col"
+              >
+                <h1 className='text-5xl'>5+</h1>
+                <div>
+                  <h3 className='text-2xl'>Team Members</h3>
+                  <p className='mt-2'>A dynamic team of creatives shaping ideas into stunning realities</p>
+                </div>
+              </div>
+            
+              <div 
+                className="col-span-1 row-span-2 bg-[yellow-200] rounded-3xl shadow-md flex items-center justify-center overflow-hidden"
+              >
+                <img className='object-fill h-full w-full'  src='https://framerusercontent.com/images/0TlX1hQrCmmwZcND6Z9Ygdv3w.png?scale-down-to=512' />
+              </div>
+            
+              <div 
+                className="col-span-1 row-span-4 bg-[#232323] rounded-3xl shadow-md justify-between flex p-5 text-white flex-col"
+              >
+                <h1 className='text-5xl'>5+</h1>
+                <div>
+                  <h3 className='text-2xl'>Impressions </h3>
+                  <p className='mt-2 text-gray-500'>Generated 5M + impressions and over 3M + views in one year</p>
+                </div>
+              </div>
+            
+              <div 
+                className="col-span-1 row-span-2 bg-green-200 rounded-3xl shadow-md flex items-center justify-center overflow-hidden"
+              >
+               <img className='object-fill h-full w-full'  src='https://framerusercontent.com/images/FPTwMu9Y8yV0vAeSiodXOXSpA.png?scale-down-to=512' />
+              </div>
+            
+              <div 
+                className="col-span-1 row-span-2 bg-[#FFFFFF] rounded-3xl shadow-md flex justify-between  p-5 text-black flex-col"
+              >
+                <div>
+                  <h1 className='text-5xl'>20+</h1>
+                  <h3 className='text-2xl'>Clients</h3>
+                </div>
+                <p className='text-gray-500'>Across Technology, Healthcare, Finance, and beyond </p>
+              </div>
+            
+            </div>
           </div>
         </div>
       </div>
-      
-      <Footer/>
     </section>
   )
 }

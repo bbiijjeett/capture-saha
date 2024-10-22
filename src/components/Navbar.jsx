@@ -72,11 +72,17 @@ const Navbar = () => {
             Services
           </a>
           <a
+            href="/say-hello"
+            className="text-white hover:text-gray-400 hover:bg-[#3a3c3d] px-4 py-2 rounded-full transition-all duration-300"
+          >
+            Contact
+          </a>
+          {/* <a
             href="#work"
             className="text-white hover:text-gray-400 hover:bg-[#3a3c3d] px-4 py-2 rounded-full transition-all duration-300"
           >
             Our Work
-          </a>
+          </a> */}
         </div>
 
 
@@ -120,6 +126,12 @@ const Navbar = () => {
                   className="text-white hover:text-gray-400 transition-all duration-300"
                 >
                   Services
+                </a>
+                <a
+                  href="/say-hello"
+                  className="text-white hover:text-gray-400 transition-all duration-300"
+                >
+                  Contact
                 </a>
                 {/* <a
                   href="#work"
