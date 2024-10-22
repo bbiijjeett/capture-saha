@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about-kreatewave" element={<About />} />
         <Route path="/our-services" element={<Services />} />
-        <Route path="/say-hello" element={<Contact />} />
+        {/* <Route path="/say-hello" element={<Contact />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

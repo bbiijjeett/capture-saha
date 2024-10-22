@@ -3,6 +3,7 @@ import camera  from '../assets/img/camera.webp'
 import max  from '../assets/img/max.webp'
 import letter  from '../assets/img/letter.webp'
 import phone  from '../assets/img/phone.webp'
+import emoji from '../assets/img/emoji.webp'
 import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 
@@ -36,22 +37,17 @@ const About = () => {
     <section className='flex flex-col gap-5 min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D] '>
       <div className='flex-col h-[80vh] md:h-[70vh] justify-between  md:flex-row bg-[#333435]  rounded-3xl p-5 text-white flex overflow-hidden'>
         <div className='w-1/2 flex flex-col justify-between'>
-          <div>
-            <p className='text-7xl font-bold'>SAY</p>
-            <p className='text-7xl font-bold'>HELLO<span className='text-red-500'>.</span></p>
+          <div className='hover:text-red-500 transition-all duration-300 text-7xl hover:scale-95 cursor-pointer'>
+            <a href='https://wa.me/919366797368'>
+              <p className=' font-bold'>SAY</p>
+              <p className=' font-bold'>HELLO<span className='text-red-500'>.</span></p>
+            </a>
           </div>
           <div className='hidden md:flex'>
-            emoji
+            <img src={emoji} className='animate-spin' alt='rotating emoji' />
           </div>
         </div>
-        {/* <div className='w-1/2 flex justify-center items-center relative'>
-          <div className='flex flex-col justify-center items-center'>
-            <img className='absolute md:translate-y-28 lg:-translate-x-36' src={camera} alt="Camera" />
-            <img className='absolute md:translate-y-44 lg:-translate-x-24' src={max} alt="Max" />
-            <img className='absolute md:translate-y-[6rem] -rotate-45 lg:left-20' src={letter} alt="Letter" />
-            <img className='absolute md:translate-y-28 lg:-translate-x-30' src={phone} alt="Phone" />
-          </div>
-        </div> */}
+  
         <div className='w-1/2 hidden lg:flex justify-center items-center relative translate-y-32'>
           {/* Image for Instagram */}
           <img 

@@ -16,6 +16,7 @@ import Services1 from "./Services1";
  
 const features = [
   {
+    id: 1,
     Icon: FileTextIcon,
     name: "Save your files",
     description: "We automatically save your files as you type.",
@@ -26,6 +27,7 @@ const features = [
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
+    id: 2,
     Icon: InputIcon,
     name: "Full text search",
     description: "Search through all your files in one place.",
@@ -35,6 +37,7 @@ const features = [
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
+    id: 3,
     Icon: GlobeIcon,
     name: "Multilingual",
     description: "Supports 100+ languages and counting.",
@@ -44,6 +47,7 @@ const features = [
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
+    id: 4,
     // Icon: RocketIcon,
     Icon: false,
     // name: "Our Services",
@@ -57,6 +61,7 @@ const features = [
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {
+    id: 5,
     Icon: BellIcon,
     name: "Notifications",
     // description:      "Get notified when someone shares a file or mentions you in a comment.",
@@ -79,7 +84,7 @@ const Bento = () => {
     <section className='h-auto p-10 md:p-24'>
       <BentoGrid className="lg:grid-rows-3 ">
         {features.map((feature) => (
-          <BentoCard key={feature.name} {...feature} />
+          <BentoCard key={feature.id} {...feature} />
         ))}
       </BentoGrid>
     </section>

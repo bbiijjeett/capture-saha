@@ -32,7 +32,7 @@ const Hero = () => {
     <section>
       <div className='min-h-screen bg-[#1B1C1D] flex items-center justify-center'>
         <div id="first" className='h-screen w-full overflow-hidden  lg:p-24'>
-          <video className='w-full h-full rounded-3xl  object-cover hover:aspect-square' src={HeroVideo} autoPlay loop muted />
+          <video className='w-full h-full rounded-3xl  object-cover hover:aspect-square' src={HeroVideo} autoPlay loop muted playsInline />
         </div>
       </div>
       <div id="second" className='min-h-screen w-full bg-[#1B1C1D] flex flex-row '>
