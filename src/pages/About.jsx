@@ -1,10 +1,10 @@
 import Flywithus from '@/components/Flywithus';
 import React from 'react';
-import bijeet from '../assets/img/bijeet.webp';
+import bijeet from '../assets/img/bijeet.jpeg';
 import somo from '../assets/img/somo.webp';
 import adit from '../assets/img/adit.webp';
 import soubhick from '../assets/img/soubhick.webp';
-import ambar from '../assets/img/ambar.jpg';
+import ambar from '../assets/img/ambar.jpeg';
 import { FaInstagram } from "react-icons/fa";
 
 const About = () => {
@@ -101,7 +101,7 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src={somo} />
+                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={somo} />
                 <p className='font-semibold'>soumajyoti</p>
                 
                 <a href='https://www.instagram.com/soumajyoti_saha/'>@soumajyoti_saha</a>
@@ -109,7 +109,7 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src={bijeet} />
+                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={bijeet} />
                 <p className='font-semibold'>Bijeet </p>
                 <a href='https://www.instagram.com/bbiijjeett/'>@bbiijjeett</a>
               </div>
@@ -117,7 +117,7 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src={adit} />
+                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={adit} />
                 <p className='font-semibold'>Adit</p>
                 <a href='https://www.instagram.com/_illumin_adi_/'>@_illumin_adi_</a>
               </div>
@@ -129,16 +129,16 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src={soubhick} />
+                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={soubhick} />
                 <p className='font-semibold'>Soubhick</p>
                 <a href='https://www.instagram.com/_random_guy_/'>@_random_guy_</a>
               </div>
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full' src={ambar} />
+                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={ambar} />
                 <p className='font-semibold'>Ambar</p>
-                <a href='https://www.instagram.com/the.saha.sky/'>@the.saha.sky</a>
+                <a href='https://www.instagram.com/the.saha.sky/ '>@the.saha.sky</a>
               </div>
             </div>
           </div>
