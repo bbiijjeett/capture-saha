@@ -52,12 +52,12 @@ const Work = () => {
 
   return (
     <section>
-      <div id='firstdiv' className="h-[40vh] md:h-[70vh] bg-white rounded-tl-3xl rounded-tr-3xl p-5 flex items-center justify-center">
+      <div id='firstdiv' className="h-[40vh] md:h-[70vh] bg-[#FAF7F0] rounded-tl-3xl rounded-tr-3xl p-5 flex items-center justify-center">
         <h1 id="project" className="font-black text-6xl  md:text-8xl lg:text-9xl">
           PROJECTS<span className="text-red-500">.</span>
         </h1>
       </div>
-      <div id='snddiv' className="bg-white h-screen p-10 md:p-5 w-full flex gap-2"> 
+      <div id='snddiv' className="bg-[#FAF7F0] h-screen p-10 md:p-5 w-full flex gap-2"> 
         <div id="moveleft" className="w-1/4 hidden md:flex items-center justify-center">
           <p className="font-bold text-wrap text-5xl text-center">
             We make gifting and celebrating better.

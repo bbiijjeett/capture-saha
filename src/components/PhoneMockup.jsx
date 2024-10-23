@@ -33,7 +33,7 @@ const PhoneMockup = () => {
   return (
     <div className='flex flex-col gap-5 items-center justify-center h-full'>
       <Iphone15Pro src={wallpapers[currentIndex]} />
-      <div className='w-60 h-12 rounded-full bg-white flex items-center justify-between p-1'>
+      <div className='w-60 h-12 rounded-full bg-white border border-black flex items-center justify-between p-1'>
         <button className='bg-black rounded-full p-2' onClick={previousWallpaper}>
         <FaArrowLeft color='white'  />
         </button>

@@ -57,7 +57,7 @@ const Service = () => {
               <div 
                   onMouseEnter={handleMouseEnter1}
                   onMouseLeave={handleMouseLeave1} 
-                  className="col-span-4 md:col-span-2 lg:col-span-1 row-span-1  md:row-span-4 lg:row-span-2  bg-[#C3B2E7] rounded-3xl flex flex-col items-start justify-between p-5"
+                  className="col-span-4 md:col-span-2 lg:col-span-1 row-span-1  md:row-span-4 lg:row-span-2  bg-[#77aaff] rounded-3xl flex flex-col items-start justify-between p-5"
               >
                 <img 
                   ref={cardRef1}
@@ -74,7 +74,7 @@ const Service = () => {
               <div 
                 onMouseEnter={handleMouseEnter2}
                 onMouseLeave={handleMouseLeave2} 
-              className="col-span-4 md:col-span-2 lg:col-span-1 row-span-1  md:row-span-2 bg-[#F682A5] rounded-3xl shadow-md flex flex-col items-start justify-between p-5">
+              className="col-span-4 md:col-span-2 lg:col-span-1 row-span-1  md:row-span-2 bg-[#EB2C5D] rounded-3xl shadow-md flex flex-col items-start justify-between p-5">
                 <img 
                   ref={cardRef2}
                   src='https://framerusercontent.com/images/RYpKKSBoLFgB7aqmjNh8WP5qw.png?scale-down-to=512' 
@@ -93,13 +93,13 @@ const Service = () => {
                 <p className='font-light text-lg'>Short and Long form video content</p>
               </div>
             
-              <div className="col-span-4 md:col-span-2 lg:col-span-1 row-span-1  md:row-span-2 bg-[#FEDF6F] rounded-3xl shadow-md flex flex-col items-start justify-between p-5">
+              <div className="col-span-4 md:col-span-2 lg:col-span-1 row-span-1  md:row-span-2 bg-[#F8C93C] rounded-3xl shadow-md flex flex-col items-start justify-between p-5">
                 <img src='https://framerusercontent.com/images/tpf8QGix2GTOb6HkST9kfujmY.png?scale-down-to=512' />
                 <h1 className='font-semibold text-2xl'>AI Image Gen</h1>
                 <p className='font-light text-lg'>Transforming Concepts into Stunning Visuals</p>
               </div>
             
-              <div className="col-span-4 md:col-span-2 row-span-1  md:row-span-2 bg-[#F9A474] rounded-3xl shadow-md flex flex-col items-start justify-between p-5">
+              <div className="col-span-4 md:col-span-2 row-span-1  md:row-span-2 bg-[#FC6840] rounded-3xl shadow-md flex flex-col items-start justify-between p-5">
                 <img className='h-[10rem]' src='https://framerusercontent.com/images/lj05O0hguBD6eSyg4PvW0Qi8Ckg.png?scale-down-to=512' />
                 {/* <img className='h-[10rem]' src='https://miro.medium.com/v2/resize:fit:1200/0*5oiuLeF3ZzHCLBCc.gif' /> */}
                 
@@ -107,7 +107,7 @@ const Service = () => {
                 <p className='font-light text-lg'>App Design, Prototyping, Interaction Design, 2D Motion Design & App Development</p>
               </div>
             
-              <div className="col-span-4 md:col-span-4 lg:col-span-2 row-span-1  md:row-span-2 bg-[#B8CEDC] rounded-3xl shadow-md flex flex-col items-start justify-between p-5">
+              <div className="col-span-4 md:col-span-4 lg:col-span-2 row-span-1  md:row-span-2 bg-[#74b8e1] rounded-3xl shadow-md flex flex-col items-start justify-between p-5">
                 <img className='h-[10rem]' src='https://framerusercontent.com/images/kbgzlNWmK2r8sS8NRzN9FDabr6s.png?scale-down-to=512' />
                 <h1 className='font-semibold text-2xl'>Social SEO</h1>
                 <p className='font-light text-lg'>Skyrocket your Social Media Presence on Autopilot with little to no Additional Time or Effort Required.</p>
