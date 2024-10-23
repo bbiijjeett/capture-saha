@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import NotFound from './pages/NotFound';
+import FooterNew from './components/FooterNew';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/say-hello" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <FooterNew/>
     </Router>
   )
 }

@@ -46,7 +46,7 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   return (
-    <nav className={`bg-[#1B1C1D] w-full p-4 absolute z-50 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav className={`bg-[#1b1c1d] w-full p-4 absolute z-50 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="flex items-center justify-between md:pl-10 md:pr-10">
         <div className="flex items-center">
           <a href="/" className="text-2xl text-white font-light">[ kreatewave ]</a>

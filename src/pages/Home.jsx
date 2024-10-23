@@ -7,7 +7,7 @@ import Bento from '../components/Bento';
 
 const Home = () => {
   return (
-    <section className='bg-[#1B1C1D]'>
+    <section className='bg-[#1b1c1d]'>
       <Hero />
       <Work/>
       <Service/>

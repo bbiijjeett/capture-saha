@@ -72,10 +72,10 @@ const Client = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative h-screen overflow-hidden bg-white">
+    <section ref={sectionRef} className="relative h-screen overflow-hidden bg-white rounded-3xl">
 
 
-      <div className="absolute inset-0 h-screen rounded-tl-3xl rounded-tr-3xl p-5 flex items-center justify-center z-0" >
+      <div className="absolute inset-0 h-screen  p-5 flex items-center justify-center z-0" >
         <h1 className="font-black text-4xl sm:text-6xl md:text-7xl lg:text-9xl">
           CLIENT<span className="text-red-500">.</span>
         </h1>

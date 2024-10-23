@@ -37,8 +37,8 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="col-span-1 row-span-3 lg:row-span-2 bg-[yellow-200] rounded-3xl shadow-md hidden lg:flex items-center justify-center overflow-hidden">
-                <img className='object-fill h-full w-full' src='https://framerusercontent.com/images/0TlX1hQrCmmwZcND6Z9Ygdv3w.png?scale-down-to=512' />
+              <div className="col-span-1 row-span-3 lg:row-span-2 rounded-3xl shadow-md hidden lg:flex items-center justify-center overflow-hidden">
+                <img className='object-fill h-full w-full' src='https://mockuptree.com/wp-content/uploads/edd/2024/07/Stationery_Mockup_psd-960x640.jpg' />
               </div>
 
               <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-4 bg-[#232323] rounded-3xl shadow-md justify-between flex p-5 text-white flex-col">
