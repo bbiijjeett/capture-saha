@@ -4,11 +4,13 @@ import Work from "../components/Work";
 import Service from '../components/Service';
 import Client from '../components/Client';
 import Bento from '../components/Bento';
+import HeroNew from '@/components/HeroNew';
 
 const Home = () => {
   return (
-    <section className='bg-[#1b1c1d]'>
-      <Hero />
+    <section className='bg-[#FAF7F0]'>
+      {/* <Hero /> */}
+      <HeroNew/>
       <Work/>
       <Service/>
       <Client/>

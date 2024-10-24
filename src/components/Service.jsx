@@ -46,8 +46,8 @@ const Service = () => {
   };
 
   return (
-    <section className=' bg-white'>
-      <div className='h-fit bg-[#1B1C1D] rounded-tl-3xl rounded-tr-3xl p-10 md:p-24 text-white'>
+    <section className=' bg-[#1B1C1D] '>
+      <div className='h-fit bg-[#FAF7F0] rounded-tl-3xl rounded-tr-3xl p-10 md:p-24 text-[#1B1C1D]'>
         <h1 className='text-center text-4xl md:text-7xl font-bold mb-2'>Our Services</h1>
         <p className='text-center text-lg md:text-2xl font-medium mb-5'>We specialise in creating eye-catching visuals, modern brand identities, innovative products, and immersive websites.</p>
         <div className='h-full w-full'>

@@ -35,11 +35,11 @@ const Hero = () => {
           <video className='w-full h-full rounded-3xl  object-cover hover:aspect-square' src={HeroVideo} autoPlay loop muted playsInline />
         </div>
       </div>
-      {/* <div id="second" className='min-h-screen w-full bg-[#1B1C1D] flex flex-row '>
+      <div id="second" className='min-h-screen w-full bg-[#1B1C1D] flex flex-row '>
           <div className=' w-full' >
             <TextReveal className='text-white' text="We are KreateWave. We are a team of talented individuals who are passionate about creating innovative solutions for our clients." />
           </div>
-      </div> */}
+      </div>
     </section>
 
   )
