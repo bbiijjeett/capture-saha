@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { gsap } from 'gsap';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const mobNavRef = useRef(null); // Ref for mobile navbar
+  const location = useLocation();
+
+  // Check if the current route is the home page
+  const isHomePage = location.pathname === '/';
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -36,20 +41,20 @@ const Navbar = () => {
     }});
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
 
-    // Cleanup event listener bg-[#1b1c1d]
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY]);
+  //   // Cleanup event listener bg-[#1b1c1d]
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [lastScrollY]);
 
   return (
-    <nav className={`bg-transparent w-full p-4 absolute z-50 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav className={`${isHomePage ? 'bg-transparent' : 'bg-[#1B1C1D]'} w-full p-4 absolute z-50 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="flex items-center justify-between md:pl-10 md:pr-10">
         <div className="flex items-center">
-          <a href="/" className="text-2xl text-[#1b1c1d] font-light">[ kreatewave ]</a>
+          <a href="/" className={`text-2xl  ${isHomePage ? 'text-[#1b1c1d]' : 'text-white'} font-light`}>[ kreatewave ]</a>
         </div>
 
         <div className="hidden md:flex space-x-8 p-2 rounded-full bg-[#292a2b]">
@@ -60,10 +65,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <a href="https://wa.me/919366797368" className="border-2 border-[#1b1c1d] rounded-full italic px-4 py-2 text-[#1b1c1d] hover:bg-[#1b1c1d] hover:text-white">Say Hello</a>
+          <a href="https://wa.me/919366797368" className={`border-2  rounded-full italic px-4 py-2 ${isHomePage ? 'text-[#1b1c1d] hover:bg-[#1b1c1d] hover:text-white border-[#1b1c1d]' : 'text-white hover:bg-white hover:text-black border-white'} `}>Say Hello</a>
 
           <div className="md:hidden flex items-center">
-            <button className="text-[#1b1c1d] focus:outline-none" onClick={openMenu}>
+            <button className={`${isHomePage ? 'text-[#1b1c1d]' : 'text-white'}  focus:outline-none`} onClick={openMenu}>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>

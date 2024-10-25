@@ -7,7 +7,7 @@ const ImageCard = ({ image }) => {
         <img
             src={image}
             alt="Unlocked Image"
-            className="w-full h-full object-cover shadow-sm rounded-lg blur-sm hover:blur-none transition-all duration-500"     
+            className="w-full h-full object-cover shadow-xl rounded-lg blur-sm hover:blur-none transition-all duration-300"     
         />
       </div>
     );
@@ -47,7 +47,7 @@ const HeroNew = () => {
                         <div className="line">content</div>
                     </h1>
                     <div className="mt-8">
-                        <a href="https://app.adjust.com/1gs4c13x" className="text-lg text-white bg-black px-4 py-2 rounded-full font-semibold">
+                        <a href="#" className="text-lg text-white bg-black hover:bg-red-500 transition-colors duration-300 px-4 py-2 rounded-full font-semibold">
                             Get Started
                         </a>
                     </div>
