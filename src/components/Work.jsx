@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import PhoneMockup from './PhoneMockup';
+import Worksection from './Worksection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,6 +73,7 @@ const Work = () => {
           </p>
         </div>
       </div>
+      <Worksection/>
     </section>
   );
 }
