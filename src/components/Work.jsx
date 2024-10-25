@@ -62,7 +62,7 @@ const Work = () => {
       <div id='snddiv' className=" bg-[#1B1C1D] h-screen p-10 md:p-5 w-full flex gap-2"> 
         <div id="moveleft" className="w-1/4 hidden md:flex items-center justify-center">
           <p className="font-bold text-[#FAF7F0] text-wrap text-5xl text-center">
-            We make gifting and celebrating better.
+          Social media connects and inspires communities.
           </p>
         </div>
         <div id="yellow" className="w-full md:w-2/4 flex items-center justify-center">
@@ -70,7 +70,7 @@ const Work = () => {
         </div>
         <div id="moveright" className="w-1/4 hidden md:flex items-center justify-center">
           <p className="font-thin text-[#FAF7F0] text-wrap text-xl text-center p-5">
-            So you can show up for every meaningful occasion, milestone, and moment.
+            So many voices unite, shaping our digital world every day.
           </p>
         </div>
       </div>

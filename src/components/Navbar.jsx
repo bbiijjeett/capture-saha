@@ -76,7 +76,7 @@ const Navbar = () => {
           <a href="https://wa.me/919366797368">
             <button className="relative font-bold inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full ${isHomePage ? 'bg-white hover:text-white hover:bg-[#1b1c1d] text-[#1b1c1d]':'bg-slate-950 text-white' }  px-3 py-1 text-sm font-medium  backdrop-blur-3xl`}>
+              <span className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full ${isHomePage ? 'bg-[#FAF7F0] hover:text-white hover:bg-[#1b1c1d] text-[#1b1c1d]':'bg-slate-950 text-white' }  px-3 py-1 text-sm font-medium  backdrop-blur-3xl`}>
               Say Hello
               </span>
             </button>
