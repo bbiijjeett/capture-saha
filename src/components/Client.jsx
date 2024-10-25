@@ -98,7 +98,7 @@ const Client = () => {
                 alt="client"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute top-0 left-0 w-3/5 h-full p-4 bg-gradient-to-r from-black to-transparent opacity-0 group-hover:opacity-100  transition-all duration-500 ease-in-out">
+              <div className="absolute top-0 left-0  -translate-x-1  w-3/5 h-full p-4 bg-gradient-to-r from-black to-transparent opacity-0 group-hover:opacity-100  transition-all duration-500 ease-in-out">
                 <p className="text-white text-lg font-bold">{i.companyName}</p>
               </div>
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100  transition-all duration-500 ease-in-out">

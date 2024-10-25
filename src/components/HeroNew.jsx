@@ -1,14 +1,25 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { IoMdLock } from "react-icons/io";
+import { IoMdUnlock } from "react-icons/io";
 
 const ImageCard = ({ image }) => {
     return (
-      <div className="w-32 h-40 ">
+      <div className="w-32 md:w-40 h-40 md:h-48 relative group">
+        <div className='absolute inset-0 text-white h-full w-full flex items-center justify-center group-hover:hidden z-20'>
+            <IoMdUnlock size={25} />
+        </div>
+        <div className='bg-white/10 backdrop-blur-sm border border-white/20 shadow-md absolute inset-0  h-full w-full group-hover:hidden z-10 rounded-lg'></div>
         <img
             src={image}
             alt="Unlocked Image"
-            className="w-full h-full object-cover shadow-xl rounded-lg blur-sm hover:blur-none transition-all duration-300"     
+            className="w-full h-full object-cover shadow-xl rounded-lg z-0"     
         />
+        {/* <img
+            src={image}
+            alt="Unlocked Image"
+            className="w-full h-full object-cover shadow-xl rounded-lg blur-sm group-hover:blur-none transition-all duration-300"     
+        /> */}
       </div>
     );
   };
@@ -41,8 +52,8 @@ const HeroNew = () => {
         <section className="relative text-white py-16 h-screen flex items-center">
             <div className="mx-auto  max-w-7xl relative z-10 text-center">
                 <div className="">
-                    <h1 className="text-6xl uppercase md:text-[8rem] font-bold text-black">
-                        <div className="line">monetize</div>
+                    <h1 className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap">
+                        <div className="line ">monetize</div>
                         <div className="line">your</div>
                         <div className="line">content</div>
                     </h1>
