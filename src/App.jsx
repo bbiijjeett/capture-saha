@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import NotFound from './pages/NotFound';
 import FooterNew from './components/FooterNew';
+import Test from './pages/Test';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/our-services" element={<Services />} />
         <Route path="/say-hello" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="test" element={<Test />} />
       </Routes>
       <FooterNew/>
     </Router>
