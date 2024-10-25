@@ -49,6 +49,12 @@ const Navbar = () => {
   //     window.removeEventListener('scroll', handleScroll);
   //   };
   // }, [lastScrollY]);
+//   <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+//   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+//   <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+//     Border Magic
+//   </span>
+// </button>
 
   return (
     <nav className={`${isHomePage ? 'bg-transparent' : 'bg-[#1B1C1D]'} w-full p-4 absolute z-50 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
@@ -65,7 +71,16 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <a href="https://wa.me/919366797368" className={`border-2  rounded-full italic px-4 py-2 ${isHomePage ? 'text-[#1b1c1d] hover:bg-[#1b1c1d] hover:text-white border-[#1b1c1d]' : 'text-white hover:bg-white hover:text-black border-white'} `}>Say Hello</a>
+          {/* <a href="https://wa.me/919366797368" className={`border-2  rounded-full italic px-4 py-2 ${isHomePage ? 'text-[#1b1c1d] hover:bg-[#1b1c1d] hover:text-white border-[#1b1c1d]' : 'text-white hover:bg-white hover:text-black border-white'} `}>Say Hello</a> */}
+          
+          <a href="https://wa.me/919366797368">
+            <button className="relative font-bold inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full ${isHomePage ? 'bg-white hover:text-white hover:bg-[#1b1c1d] text-[#1b1c1d]':'bg-slate-950 text-white' }  px-3 py-1 text-sm font-medium  backdrop-blur-3xl`}>
+              Say Hello
+              </span>
+            </button>
+          </a>
 
           <div className="md:hidden flex items-center">
             <button className={`${isHomePage ? 'text-[#1b1c1d]' : 'text-white'}  focus:outline-none`} onClick={openMenu}>
