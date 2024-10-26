@@ -47,7 +47,7 @@ const TitleMagic = () => {
           <span
             key={idx}
             ref={(el) => (letterRefs.current[idx] = el)}
-            className="cursor-pointer font-black   text-5xl md:text-7xl  lg:text-9xl leading-tight select-none"
+            className="cursor-pointer font-black   text-4xl md:text-7xl  lg:text-9xl leading-none select-none"
           >
             {letter}
           </span>
