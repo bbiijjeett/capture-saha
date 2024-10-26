@@ -97,22 +97,22 @@ const HeroNew = () => {
             <div className="absolute inset-0 z-0 bg-[#FAF7F0] mt-20">
                 <div ref={containerRef} className='relative w-full h-full'>
                     <div className='top-[9%] md:top-[5%] left-[16%] md:left-[26%] absolute image-card'>
-                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/q_auto,f_auto/v1729960722/DSC02487_cftagw.webp' />
+                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/w_320,h_384,q_auto,f_auto/v1729960722/DSC02487_cftagw.webp' />
                     </div>
                     <div className='top-[40%] md:top-[29%] -left-[12%] md:left-[12%] absolute image-card'>
-                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/q_auto,f_auto/v1729960721/DSC00140_m7bohr.webp' />
+                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/w_320,h_384,q_auto,f_auto/v1729960721/DSC00140_m7bohr.webp' />
                     </div>
                     <div className='bottom-[10%] md:bottom-[10%] left-[16%] md:left-[22.5%] absolute image-card'>
-                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/q_auto,f_auto/v1729960722/DSC02364_1_fuerni.webp' />
+                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/w_320,h_384,q_auto,f_auto/v1729960722/DSC02364_1_fuerni.webp' />
                     </div>
                     <div className='top-[9%] md:top-[9%] right-[16%] md:right-[26%] absolute image-card'>
-                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/q_auto,f_auto/v1729960723/DSC01702_zbrmjl.webp' />
+                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/w_320,h_384,q_auto,f_auto/v1729960723/DSC01702_zbrmjl.webp' />
                     </div>
                     <div className='top-[40%] md:top-[29%] -right-[12%] md:right-[8%] absolute image-card'>
-                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/q_auto,f_auto/v1729960722/DSC08544_t7nd82.webp' />
+                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/w_320,h_384,q_auto,f_auto/v1729960722/DSC08544_t7nd82.webp' />
                     </div>
                     <div className='bottom-[10%] md:bottom-[10%] right-[16%] md:right-[22.5%] absolute image-card'>
-                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/q_auto,f_auto/v1729960721/DSC02285_t7a7dz.webp' />
+                        <ImageCard image='https://res.cloudinary.com/dgtcjadsp/image/upload/w_320,h_384,q_auto,f_auto/v1729960721/DSC02285_t7a7dz.webp' />
                     </div>
                 </div>
             </div>
