@@ -13,12 +13,13 @@ const FooterNew = () => {
   return (
     <footer className='rounded-tl-3xl rounded-tr-3xl flex flex-col md:flex-row gap-5 md:gap-0 text-center items-center md:items-baseline justify-around bg-[#1b1c1d] py-10'>
         <div className='flex flex-col md:items-start gap-2'>
-            <p className='text-white font-semibold text-2xl'>Kreatewave</p>
+            <p className='text-white font-semibold text-2xl'>[ KreateWave ]</p>
         </div>
         <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Contact</h1>
-            <p className='font-normal text-gray-400 hover:text-white transition-all duration-300'>+91-999999999</p>
-            <a href='mailto:hello@kreatewave.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>hello@kreatewave.com</a>
+            {/* <p className='font-normal text-gray-400 hover:text-white transition-all duration-300'>+91-999999999</p> */}
+            {/* <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Linked.in</a> */}
+            <a href='mailto:hello@kreatewave.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
         </div>
         <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Team</h1>
@@ -32,9 +33,9 @@ const FooterNew = () => {
         </div>
         <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Follow Us</h1>
-            <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
-            <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
-            <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook.in</a>
+            <a href='https://www.instagram.com/capturewithsaha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
+            <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
+            {/* <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook.in</a> */}
         </div>
     </footer>
   )
