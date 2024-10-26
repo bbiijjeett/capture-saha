@@ -10,6 +10,7 @@ import apos2 from '../assets/img/apos2.png';
 import { FaInstagram } from "react-icons/fa";
 import video3 from '../assets/video/video2.gif';
 import 'animate.css';
+import TitleMagic from '@/components/TitleMagic';
 
 const About = () => {
   return (
@@ -17,8 +18,9 @@ const About = () => {
 
       <div className='bg-[#FAF7F0] rounded-3xl mt-5 py-2'>
         <div className='flex flex-col gap-5 items-center justify-center'>
-          <h1 className='text-4xl md:text-8xl font-black mt-10 animate__animated animate__tada'>Kreativity Driven</h1>
-          <p className='font-light text-base md:text-2xl text-center'>We are the one who bring the wave of creativity to your brand.</p>
+          {/* <h1 className=' text-4xl md:text-6xl lg:text-8xl font-black mt-10 animate__animated animate__tada '>Kreativity Driven</h1> */}
+          <TitleMagic />
+          <p className='w-[90%] md:w-full font-light text-base md:text-2xl text-center'>We are the one who bring the wave of creativity to your brand.</p>
         </div>
 
         <div id='teampic' className='flex flex-col gap-5 my-14'>
@@ -74,14 +76,14 @@ const About = () => {
 
         <div id="Values" className='flex flex-col gap-10 mt-10 px-10 w-full'>
           <div className='w-full text-center flex flex-col justify-center items-center'>
-            <p className='w-[80%] md:w-[60%] text-xl'>
-              <span className='mr-2'>
-                <img src={apos2} className='h-5 w-5 inline -translate-y-2 ' />
-              </span>
-              At KreateWave, we believe that the driving forces behind every successful brand are curiosity and creativity. These values fuel our passion for innovation and guide every decision we make
-              <span className='ml-2'>
-                <img src={apos2} className='h-5 rotate-180 w-5 inline -translate-y-2 ' />
-              </span>
+            <p className='w-[80%] md:w-[60%]  text-xl'>
+              {/* <span className='mr-0'>
+                <img src={apos2} className='h-3 w-3 inline translate-y-2 ' />
+              </span> */}
+                "At KreateWave, we believe that the driving forces behind every successful brand are curiosity and creativity.These values fuel our passion for innovation and guide every decision we make."
+              {/* <span className='ml-0'>
+                <img src={apos2} className='h-3 rotate-180 w-3 inline translate-y-2 ' />
+              </span> */}
             </p>
           </div>
           <div className="flex h-full w-full items-center justify-center">
