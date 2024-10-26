@@ -60,7 +60,7 @@ const Navbar = () => {
     <nav className={`${isHomePage ? 'bg-transparent' : 'bg-[#1B1C1D]'} w-full p-4 absolute z-50 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="flex items-center justify-between md:pl-10 md:pr-10">
         <div className="flex items-center">
-          <a href="/" className={`text-2xl  ${isHomePage ? 'text-[#1b1c1d]' : 'text-white'} font-light`}>[ kreatewave ]</a>
+          <a href="/" className={`text-2xl  ${isHomePage ? 'text-[#1b1c1d]' : 'text-white'} font-light`}>[ KreateWave ]</a>
         </div>
 
         <div className="hidden md:flex space-x-8 p-2 rounded-full bg-[#292a2b]">

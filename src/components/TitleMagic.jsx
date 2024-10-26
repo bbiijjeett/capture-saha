@@ -5,7 +5,7 @@ import './TitleMagic.css';
 
 const TitleMagic = () => {
 
-  const letters = ['K', 'r', 'e', 'a', 't','e','w','a','v','e'];
+  const letters = ['K', 'r', 'e', 'a', 't','e','W','a','v','e'];
   const letterRefs = useRef([]);
 
   useEffect(() => {
