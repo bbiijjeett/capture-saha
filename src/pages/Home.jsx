@@ -4,6 +4,7 @@ import Service from '../components/Service';
 import Client from '../components/Client';
 import Bento from '../components/Bento';
 import HeroNew from '@/components/HeroNew';
+import Flywithus from '@/components/Flywithus';
 
 const Home = () => {
   return (
@@ -12,7 +13,12 @@ const Home = () => {
       <Work/>
       <Service/>
       <Client/>
-      <Bento/>
+      {/* <Bento/> */}
+      <div className='p-10'>
+
+        <Flywithus/>
+      </div>
+
     </section>
   )
 }
