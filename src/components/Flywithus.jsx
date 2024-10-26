@@ -22,7 +22,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 const Flywithus = () => {
   return (
-    <div className={`relative   h-[60vh] w-full  flex flex-col p-10 gap-10 justify-center items-center rounded-3xl border-black overflow-hidden `}>
+    <div className={`relative h-full md:h-[60vh] w-full  flex flex-col p-10 gap-10 justify-center items-center rounded-3xl border-black overflow-hidden `}>
         <div className="absolute z-10 inset-0 bg-cover blur-sm object-top bg-[url('https://res.cloudinary.com/dgtcjadsp/image/upload/v1729960720/447586436_1175614883773261_2047765867233244242_n_1_c4pcj6.webp')]"></div>
         <h1 className='text-3xl sm:text-5xl text-yellow-100 z-20 md:text-8xl font-bold text-center'>Ready to Surf Wave?</h1>
         <p className='font-normal shadow-sm text-yellow-100 z-20 text-xl text-center w-full md:w-3/4'>Whether you're looking to build a powerful personal brand, enhance your online presence, or create captivating content, KreateWave is here to help you achieve your goals. Let&apos;s collaborate and bring your vision to life.</p>
