@@ -25,11 +25,14 @@ const Test = () => {
 
   return (
     <section className='bg-white'>
-      <div className='h-screen w-full flex justify-center items-center bg-white section'>1</div>
+      <div className='h-screen w-full flex justify-center items-center bg-white'>
+        1
+      </div>
+      {/* <div className='h-screen w-full flex justify-center items-center bg-white section'>1</div>
       <div className='h-screen w-full flex justify-center items-center bg-black rounded-tl-3xl rounded-tr-3xl section'>2</div>
       <div className='h-screen w-full flex justify-center items-center bg-white rounded-tl-3xl rounded-tr-3xl section'>3</div>
       <div className='h-screen w-full flex justify-center items-center bg-black rounded-tl-3xl rounded-tr-3xl section'>4</div>
-      <div className='h-screen w-full flex justify-center items-center bg-white rounded-tl-3xl rounded-tr-3xl section'>5</div>
+      <div className='h-screen w-full flex justify-center items-center bg-white rounded-tl-3xl rounded-tr-3xl section'>5</div> */}
     </section>
   );
 };

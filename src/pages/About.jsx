@@ -5,7 +5,11 @@ import somo from '../assets/img/somo.webp';
 import adit from '../assets/img/adit.webp';
 import soubhick from '../assets/img/soubhick.webp';
 import ambar from '../assets/img/ambar.jpeg';
+import apos1 from '../assets/img/apos1.png';
+import apos2 from '../assets/img/apos2.png';
 import { FaInstagram } from "react-icons/fa";
+import video3 from '../assets/video/video2.gif';
+import 'animate.css';
 
 const About = () => {
   return (
@@ -13,86 +17,8 @@ const About = () => {
 
       <div className='bg-[#FAF7F0] rounded-3xl mt-5 py-2'>
         <div className='flex flex-col gap-5 items-center justify-center'>
-          <h1 className='text-5xl font-bold'>Design Driven</h1>
-          <p className='font-light text-lg text-center'>We are the architects of brand strategy, crafting visual identities and narratives that resonate with audiences.</p>
-        </div>
-
-        <div id='bentoGrid' className='p-5'>
-          <div className="flex h-fit lg:h-[60vh] w-full items-center justify-center">
-            <div className="grid h-full w-full gap-4 p-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-rows-1 md:grid-rows-6 lg:grid-rows-4 rounded-lg ">
-
-              <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-2 bg-[#232323] rounded-3xl shadow-md justify-between flex p-5 text-white flex-col">
-                <div>
-                  <h1 className='text-5xl'>50+</h1>
-                  <h3 className='text-2xl'>Projects</h3>
-                </div>
-                <p className='text-gray-500'>Across Branding, Packaging, SEO, Product design and development! </p>
-              </div>
-
-              <div className="col-span-1 row-span-1 md:row-span-4 lg:row-span-4 bg-[#4D28BD] rounded-3xl shadow-md justify-between flex p-5 text-white flex-col">
-                <h1 className='text-5xl'>5+</h1>
-                <div>
-                  <h3 className='text-2xl'>Team Members</h3>
-                  <p className='mt-2'>A dynamic team of creatives shaping ideas into stunning realities</p>
-                </div>
-              </div>
-
-              <div className="col-span-1 row-span-3 lg:row-span-2 rounded-3xl shadow-md hidden lg:flex items-center justify-center overflow-hidden">
-                <img className='object-fill h-full w-full' src='https://mockuptree.com/wp-content/uploads/edd/2024/07/Stationery_Mockup_psd-960x640.jpg' />
-              </div>
-
-              <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-4 bg-[#232323] rounded-3xl shadow-md justify-between flex p-5 text-white flex-col">
-                <h1 className='text-5xl'>5+</h1>
-                <div>
-                  <h3 className='text-2xl'>Impressions </h3>
-                  <p className='mt-2 text-gray-500'>Generated 5M + impressions and over 3M + views in one year</p>
-                </div>
-              </div>
-
-              <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-2 bg-green-200 rounded-3xl shadow-md hidden md:flex items-center justify-center overflow-hidden">
-                <img className='object-fill h-full w-full' src='https://framerusercontent.com/images/FPTwMu9Y8yV0vAeSiodXOXSpA.png?scale-down-to=512' />
-              </div>
-
-              <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-2 bg-[#FFFFFF] rounded-3xl shadow-md flex justify-between  p-5 text-black flex-col">
-                <div>
-                  <h1 className='text-5xl'>20+</h1>
-                  <h3 className='text-2xl'>Clients</h3>
-                </div>
-                <p className='text-gray-500'>Across Technology, Healthcare, Finance, and beyond </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div id="Values" className='flex flex-col gap-10 mt-10 px-10'>
-
-          <div className="flex h-full w-full items-center justify-center">
-            <div className="grid h-full w-full  gap-4  p-2 grid-cols-2 grid-rows-1 rounded-lg ">
-              <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col md:p-10">
-                <p className='font-normal'>Our Values</p>
-                <h1 className='font-semibold text-5xl md:w-1/2'>Curiosity & Creativity</h1>
-              </div>
-              <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col gap-4 items-center justify-center md:pr-10 font-normal">
-                <p>We believe that by nurturing these qualities, we unlock the potential for groundbreaking innovations in web design. Our relentless curiosity propels us to explore new technologies, while our boundless creativity allows us to envision and actualize unique solutions. We encourage a culture of constant learning, pushing boundaries, and thinking outside the box. </p>
-                <p>Our dedication to curiosity and creativity enables us to stay at the forefront of the industry, delivering cutting-edge features and empowering our users to bring their boldest ideas to life.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex h-full w-full items-center justify-center">
-            <div className="grid h-full w-full gap-4  p-2 grid-cols-2 grid-rows-1 rounded-lg ">
-              <div className="col-span-2 md:col-span-1 row-span-1  flex flex-col md:p-10">
-                <p className='font-normal'>Our Mission</p>
-                <h1 className='font-semibold text-5xl md:w-1/2'>To Help Our Clients Win</h1>
-              </div>
-              <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col gap-4 items-center justify-center md:pr-10 font-normal">
-                <p>Our mission is to elevate brands through insight-driven design. As brand building takes center stage in 2024, we fuse strategic understanding with stunning visual solutions to help companies communicate their purpose and connect more deeply with customers. </p>
-                <p>Guided by curiosity and imagination, our passionate team of creative thinkers spots opportunities for brands to make meaningful progress in their industries and communities. We empower their visions to take flight.</p>
-              </div>
-            </div>
-          </div>
-
+          <h1 className='text-8xl font-black mt-10 animate__animated animate__tada'>Kreativity Driven</h1>
+          <p className='font-light text-2xl text-center'>We are the one who bring the wave of creativity to your brand.</p>
         </div>
 
         <div id='teampic' className='flex flex-col gap-5 my-14'>
@@ -101,7 +27,7 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={somo} />
+                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale' src={somo} />
                 <p className='font-semibold'>soumajyoti</p>
                 
                 <a href='https://www.instagram.com/soumajyoti_saha/'>@soumajyoti_saha</a>
@@ -109,7 +35,7 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={bijeet} />
+                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale' src={bijeet} />
                 <p className='font-semibold'>Bijeet </p>
                 <a href='https://www.instagram.com/bbiijjeett/'>@bbiijjeett</a>
               </div>
@@ -117,7 +43,7 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={adit} />
+                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale' src={adit} />
                 <p className='font-semibold'>Adit</p>
                 <a href='https://www.instagram.com/_illumin_adi_/'>@_illumin_adi_</a>
               </div>
@@ -129,17 +55,124 @@ const About = () => {
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={soubhick} />
+                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale' src={soubhick} />
                 <p className='font-semibold'>Soubhick</p>
                 <a href='https://www.instagram.com/_random_guy_/'>@_random_guy_</a>
               </div>
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center"
               >
-                <img className='h-[20rem] w-[20rem] rounded-full object-cover grayscale' src={ambar} />
+                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale' src={ambar} />
                 <p className='font-semibold'>Ambar</p>
                 <a href='https://www.instagram.com/the.saha.sky/ '>@the.saha.sky</a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div id="Values" className='flex flex-col gap-10 mt-10 px-10 w-full'>
+          <div className='w-full text-center flex flex-col justify-center items-center'>
+            <p className='w-[60%] text-xl'>
+              <span className='mr-2'>
+                <img src={apos2} className='h-5 w-5 inline -translate-y-2 ' />
+              </span>
+              At KreateWave, we believe that the driving forces behind every successful brand are curiosity and creativity. These values fuel our passion for innovation and guide every decision we make
+              <span className='ml-2'>
+                <img src={apos2} className='h-5 rotate-180 w-5 inline -translate-y-2' />
+              </span>
+            </p>
+          </div>
+          <div className="flex h-full w-full items-center justify-center">
+            <div className="grid h-full w-full  gap-4  p-2 grid-cols-2 grid-rows-1 rounded-lg ">
+              <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col md:p-10">
+                <p className='font-normal'>Our Values</p>
+                <h1 className='font-semibold text-5xl md:w-1/2'>Curiosity</h1>
+              </div>
+              <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col gap-4 items-center justify-center md:pr-10 font-normal">
+                <p>We are always eager to learn, explore, and question the status quo. This relentless curiosity helps us uncover new opportunities and push boundaries in the digital world. By staying ahead of industry trends and continuously expanding our knowledge, we ensure that our clients benefit from cutting-edge strategies that set them apart from the competition. </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex h-full w-full items-center justify-center">
+            <div className="grid h-full w-full  gap-4  p-2 grid-cols-2 grid-rows-1 rounded-lg ">
+              <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col md:p-10">
+                <p className='font-normal'>Our Mission</p>
+                <h1 className='font-semibold text-5xl md:w-1/2'>Creativity</h1>
+              </div>
+              <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col gap-4 items-center justify-center md:pr-10 font-normal">
+                <p>Every brand has a story, and we are here to tell it in the most compelling way. Our team thrives on creative challenges, turning bold ideas into impactful solutions. We take pride in crafting unique and engaging content, designs, and campaigns that resonate with audiences and leave lasting impressions.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="flex h-full w-full items-center justify-center">
+            <div className="grid h-full w-full gap-4  p-2 grid-cols-2 grid-rows-1 rounded-lg ">
+              <div className="col-span-2 md:col-span-1 row-span-1  flex flex-col md:p-10">
+                <p className='font-normal'>Our Mission</p>
+                <h1 className='font-semibold text-5xl md:w-1/2'>To Help Our Clients Win</h1>
+              </div>
+              <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col gap-4 items-center justify-center md:pr-10 font-normal">
+                <p>Our mission is to elevate brands through insight-driven design. As brand building takes center stage in 2024, we fuse strategic understanding with stunning visual solutions to help companies communicate their purpose and connect more deeply with customers. </p>
+                <p>Guided by curiosity and imagination, our passionate team of creative thinkers spots opportunities for brands to make meaningful progress in their industries and communities. We empower their visions to take flight.</p>
+              </div>
+            </div>
+          </div> */}
+
+        </div>
+
+        <div id='bentoGrid' className='p-5 my-14'>
+          <div className="flex h-fit lg:h-[60vh] w-full items-center justify-center">
+            <div className="grid h-full w-full gap-4 p-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-rows-1 md:grid-rows-6 lg:grid-rows-4 rounded-lg ">
+
+              <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-2 bg-[#232323] rounded-3xl shadow-md justify-between flex overflow-hidden  text-white flex-col">
+                {/* <div>
+                  <h1 className='text-5xl'>50+</h1>
+                  <h3 className='text-2xl'>Projects</h3>
+                </div>
+                <p className='text-gray-500'>Across Branding, Packaging, SEO, Product design and development! </p> */}
+                <iframe className='object-fill h-full w-full' src="https://www.behance.net/embed/project/166456529?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+              </div>
+
+              <div className="col-span-1 row-span-1 md:row-span-4 lg:row-span-4 bg-[#4D28BD] p-5 rounded-3xl shadow-md justify-between flex overflow-hidden text-white flex-col">
+                <h1 className='text-5xl'>5+</h1>
+                <div>
+                  <h3 className='text-2xl'>Team Members</h3>
+                  <p className='mt-2'>A dynamic team of creatives shaping ideas into stunning realities</p>
+                </div>
+                {/* <img className='object-fill h-full w-full aspect-video' src={video3} /> */}
+              </div>
+
+              <div className="col-span-1 row-span-3 lg:row-span-2 rounded-3xl shadow-md hidden lg:flex items-center justify-center overflow-hidden">
+                {/* bg-[#232323] <img className='object-fill h-full w-full' src='https://mockuptree.com/wp-content/uploads/edd/2024/07/Stationery_Mockup_psd-960x640.jpg' /> */}
+                <iframe className='object-fill h-full w-full' src="https://www.behance.net/embed/project/146533785?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+              </div>
+
+              <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-4  bg-[#232323]  rounded-3xl shadow-md justify-between flex p-5 text-white flex-col">
+                <h1 className='text-5xl'>5+</h1>
+                <div>
+                  <h3 className='text-2xl'>Impressions </h3>
+                  <p className='mt-2 text-gray-500'>Generated 5M + impressions and over 3M + views in one year</p>
+                </div>
+              </div>
+
+              <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-2 bg-green-200 rounded-3xl shadow-md hidden md:flex items-center justify-center overflow-hidden">
+                {/* <img className='object-fill h-full w-full' src='https://framerusercontent.com/images/FPTwMu9Y8yV0vAeSiodXOXSpA.png?scale-down-to=512' /> */}
+                <iframe className='object-fill h-full w-full' src="https://www.behance.net/embed/project/156623489?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+              </div>
+
+              <div className="col-span-1 row-span-1 md:row-span-2 lg:row-span-2 bg-[#FFFFFF] rounded-3xl shadow-md flex justify-between overflow-hidden  text-black flex-col">
+                {/* <div>
+                  <h1 className='text-5xl'>20+</h1>
+                  <h3 className='text-2xl'>Clients</h3>
+                </div>
+                <p className='text-gray-500'>Across Technology, Healthcare, Finance, and beyond </p> */}
+                {/* <iframe className='object-fill h-full w-full' src="https://www.behance.net/embed/project/134211901?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe> */}
+                <iframe className='object-fill h-full w-full' src="https://www.behance.net/embed/project/135696725?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+              </div>
+
             </div>
           </div>
         </div>
