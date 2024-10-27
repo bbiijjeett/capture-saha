@@ -7,46 +7,32 @@ gsap.registerPlugin(ScrollTrigger);
 const testimonials = [
   { 
     "id": 1,
-    "companyName": "Modern Living Architects",
-    "testimonial": "The team brought our vision to life with a sleek and modern website. Their attention to detail and ability to capture our brand essence exceeded expectations!",
+    "companyName": "Rento",
+    "testimonial": "Saumajyoti was a fantastic addition to the Rento team as our Content Creator and Video Editor. He knew just how to make our properties stand out and keep things looking top-notch. Highly recommended for any creative role,he will do a great job!",
     "client": "Sarah M., Head Architect",
-    "image":"https://static.wixstatic.com/media/3d4741_bf227dbff4dc47ee9402ad6915b67af8~mv2.jpg/v1/fill/w_438,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/nedladdning%20(22)_edited.jpg"
+    "image":"https://res.cloudinary.com/dgtcjadsp/image/upload/v1729995997/rento_iumzky.svg"
   },
   { 
     "id": 2,
-    "companyName": "GreenLeaf Eco Solutions",
+    "companyName": "Easybuy",
     "testimonial": "Their social media campaigns increased our engagement by 200%! We love how they creatively market our eco-friendly products.",
     "client": "John D., Marketing Director",
-    "image":"https://static.wixstatic.com/media/3d4741_d22a2ed787544823bc300211b5d9334e~mv2.jpg/v1/fill/w_438,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/JOOOOLI_edited%20(1)_edited.jpg"
+    "image":"https://res.cloudinary.com/dgtcjadsp/image/upload/v1729995999/easybuy_fuzwlq.svg"
   },
   { 
     "id": 3,
-    "companyName": "Bluewave Fitness Studio",
+    "companyName": "Eatit",
     "testimonial": "They transformed our website into a dynamic, user-friendly platform. Membership signups skyrocketed, and the design perfectly reflects our energetic brand!",
     "client": "Amanda P., Studio Owner",
-    "image":"https://static.wixstatic.com/media/3d4741_c8c389ebd3654ec7950a3f02756718dd~mv2.png/v1/fill/w_438,h_438,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/roza_edited.png"
+    "image":"https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996289/eatit_s8fxlw.svg"
   },
   {
     "id": 4,
-    "companyName": "Apex Real Estate",
+    "companyName": "JD Institute Of Fashion Technology Official",
     "testimonial": "Their performance marketing strategies have consistently delivered high-quality leads. We've seen a huge ROI in our digital ad spend.",
     "client": "Paul H., CEO",
-    "image":"https://static.wixstatic.com/media/3d4741_7b03f9ea1e1d4e1fa6ff6fa19503b7fb~mv2.jpg/v1/fill/w_438,h_438,fp_0.39_0.21,q_80,usm_0.66_1.00_0.01,enc_auto/favo-instagram-1---kopia_edited.jpg"
+    "image":"https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996288/jdinstitute_eyld70.svg"
   },
-  {
-    "id": 5,
-    "companyName": "Tasteville Restaurant Group",
-    "testimonial": "Our website redesign brought us into the digital age, with seamless online reservations and a mouthwatering menu layout. Customers love the new experience!",
-    "client": "Liam K., Co-Founder",
-    "image":"https://static.wixstatic.com/media/3d4741_bb40fc086580434ebef0b32515f31529~mv2.png/v1/fill/w_438,h_438,fp_0.53_0.35,q_85,usm_0.66_1.00_0.01,enc_auto/LOTTA_edited%20(1)_edited_edited_edited.png"
-  },
-  {
-    "id": 6,
-    "companyName": "UrbanStyle Fashion",
-    "testimonial": "The eCommerce site they built for us is a game-changer. Not only does it look great, but it's also boosted our sales by 30% in just 3 months!",
-    "client": "Emma R., Brand Manager",
-    "image":"https://static.wixstatic.com/media/3d4741_4a983889c4954b00b6c9d2f943acb439~mv2.jpg/v1/fill/w_438,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DALL%C2%B7E%202023-06-05%2017_41_00%20-%20prolong%20the%20background%20of%20the%20imager_edited.jpg"
-  }
 ];
 
 const Client = () => {

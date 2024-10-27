@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 const team = [
     
@@ -10,8 +11,13 @@ const team = [
 ]
 
 const FooterNew = () => {
+    const location = useLocation();
+
+  // Check if the current route is the home page
+  const isHomePage = location.pathname === '/';
+
   return (
-    <footer className='rounded-tl-3xl rounded-tr-3xl flex flex-col md:flex-row gap-5 md:gap-0 text-center items-center md:items-baseline justify-around bg-[#1b1c1d] py-10'>
+    <footer className={`${isHomePage ? 'rounded-tl-3xl rounded-tr-3xl' : ' '}  flex flex-col md:flex-row gap-5 md:gap-0 text-center items-center md:items-baseline justify-around bg-[#1b1c1d] py-10`}>
         <div className='flex flex-col md:items-start gap-2'>
             <p className='text-white font-semibold text-2xl'>[ KreateWave ]</p>
         </div>

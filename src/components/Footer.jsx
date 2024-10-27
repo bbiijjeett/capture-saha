@@ -5,6 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 import { FaAngleUp } from "react-icons/fa6";
 
+
 const footerElements = [
     { icon: <MdPhone />, text: 'Phone' }, 
     { icon: <HiOutlineMail />, text: 'Email' },
@@ -14,6 +15,7 @@ const footerElements = [
 ];
 
 const Footer = () => {
+  
   return (
     <footer className='flex justify-center items-center'>
         <ul className='flex flex-row justify-center items-center gap-5'>

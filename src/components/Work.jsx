@@ -60,16 +60,18 @@ const Work = () => {
         </h1>
       </div>
       <div id='snddiv' className=" bg-[#1B1C1D] h-screen p-10 md:p-5 w-full flex gap-2"> 
-        <div id="moveleft" className="w-1/4 hidden md:flex items-center justify-center">
-          <p className="font-bold text-[#FAF7F0] text-wrap text-5xl text-center">
+        <div id="moveleft" className="w-1/3   hidden md:flex items-center justify-center">
+          <p className="font-bold text-[#FAF7F0] px-20 text-wrap text-5xl text-center">
           Social media connects and inspires communities.
           </p>
+          <img className='absolute h-36 w-36 top-[9%] left-[46%] -rotate-12' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' />
+          <img className='absolute h-36 w-36 bottom-[9%] left-[46%] rotate-12' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' />
         </div>
-        <div id="yellow" className="w-full md:w-2/4 flex items-center justify-center">
+        <div id="yellow" className="w-full md:w-1/3 flex   items-center justify-center">
           <PhoneMockup />
         </div>
-        <div id="moveright" className="w-1/4 hidden md:flex items-center justify-center">
-          <p className="font-thin text-[#FAF7F0] text-wrap text-xl text-center p-5">
+        <div id="moveright" className="w-1/3 hidden md:flex   items-center justify-center">
+          <p className="font-thin text-[#FAF7F0] px-20 text-wrap text-xl text-center p-5">
             So many voices unite, shaping our digital world every day.
           </p>
         </div>

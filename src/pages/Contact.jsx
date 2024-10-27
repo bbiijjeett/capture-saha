@@ -1,4 +1,5 @@
-import Footer from '@/components/Footer'
+// import Footer from '@/components/Footer'
+import Flywithus from '@/components/Flywithus'
 import camera  from '../assets/img/camera.webp'
 import max  from '../assets/img/max.webp'
 import letter  from '../assets/img/letter.webp'
@@ -35,7 +36,7 @@ const Contact = () => {
   };
 
   return ( 
-    <section className='flex flex-col gap-5 min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D] '>
+    <section className='flex flex-col gap-5 h-full py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D] '>
       <div className='flex-col h-[80vh] md:h-[70vh] justify-between  md:flex-row bg-[#FAF7F0]  rounded-3xl p-5 text-[#333435]  flex overflow-hidden'>
         <div className='w-1/2 flex flex-col justify-between'>
           <div className='hover:text-red-500 transition-all duration-300 text-7xl md:text-8xl hover:scale-95 cursor-pointer'>
@@ -140,7 +141,7 @@ const Contact = () => {
         </div>
       </div>
       
-      <Footer/>
+      <Flywithus/>
     </section>
   )
 }
