@@ -1,26 +1,14 @@
 import React, { useEffect,useRef } from 'react';
 import { gsap } from 'gsap';
-import '../components/WaveText.css';
+import CursorImage from '@/components/CursorImage';
+import ImageTrail from '@/components/ImageTrail';
 
 const Test = () => {
 
   return (
-    <section className='bg-white'>
-      <div className='h-screen w-full flex justify-center items-center bg-white'>
-        <h1   className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap">
-          <div className="line absolute text-transparent stroke-text top-[10%]">Where</div>
-          <div className="line absolute animated-text top-[10%]">Where</div>
-          <div className="line absolute text-transparent stroke-text top-[25%]">Ideas</div>
-          <div className="line absolute animated-text top-[25%]">Ideas</div>
-          <div className="line absolute text-transparent stroke-text top-[40%]">Rave!</div>
-          <div className="line absolute animated-text top-[40%]">Rave!</div>
-        </h1>
-      </div>
-      {/* <div className='h-screen w-full flex justify-center items-center bg-white section'>1</div>
-      <div className='h-screen w-full flex justify-center items-center bg-black rounded-tl-3xl rounded-tr-3xl section'>2</div>
-      <div className='h-screen w-full flex justify-center items-center bg-white rounded-tl-3xl rounded-tr-3xl section'>3</div>
-      <div className='h-screen w-full flex justify-center items-center bg-black rounded-tl-3xl rounded-tr-3xl section'>4</div>
-      <div className='h-screen w-full flex justify-center items-center bg-white rounded-tl-3xl rounded-tr-3xl section'>5</div> */}
+    <section className='bg-white h-screen'>
+      {/* <CursorImage /> */}
+      <ImageTrail />
     </section>
   );
 };
