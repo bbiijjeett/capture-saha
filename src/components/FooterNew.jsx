@@ -27,6 +27,13 @@ const FooterNew = () => {
             {/* <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Linked.in</a> */}
             <a href='mailto:hello@kreatewave.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
         </div>
+        
+        <div className='flex flex-col md:items-start gap-2'>
+            <h1 className='text-white font-semibold'>Follow Us</h1>
+            <a href='https://www.instagram.com/capturewithsaha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
+            <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
+            {/* <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook.in</a> */}
+        </div>
         <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Team</h1>
             <ul className='flex flex-col md:items-start gap-2'>
@@ -36,12 +43,6 @@ const FooterNew = () => {
                     </li>
                 ))}
             </ul>
-        </div>
-        <div className='flex flex-col md:items-start gap-2'>
-            <h1 className='text-white font-semibold'>Follow Us</h1>
-            <a href='https://www.instagram.com/capturewithsaha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
-            <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
-            {/* <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook.in</a> */}
         </div>
     </footer>
   )

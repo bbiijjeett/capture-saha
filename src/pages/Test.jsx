@@ -1,32 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useRef } from 'react';
 import { gsap } from 'gsap';
+import '../components/WaveText.css';
 
 const Test = () => {
-  useEffect(() => {
-    const sections = document.querySelectorAll('.section');
-
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      sections.forEach((section, index) => {
-        gsap.to(section, {
-          y: scrollY * (index % 2 === 0 ? 0.5 : -0.5),
-          ease: 'power2.out',
-        });
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <section className='bg-white'>
       <div className='h-screen w-full flex justify-center items-center bg-white'>
-        1
+        <h1   className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap">
+          <div className="line absolute text-transparent stroke-text top-[10%]">Where</div>
+          <div className="line absolute animated-text top-[10%]">Where</div>
+          <div className="line absolute text-transparent stroke-text top-[25%]">Ideas</div>
+          <div className="line absolute animated-text top-[25%]">Ideas</div>
+          <div className="line absolute text-transparent stroke-text top-[40%]">Rave!</div>
+          <div className="line absolute animated-text top-[40%]">Rave!</div>
+        </h1>
       </div>
       {/* <div className='h-screen w-full flex justify-center items-center bg-white section'>1</div>
       <div className='h-screen w-full flex justify-center items-center bg-black rounded-tl-3xl rounded-tr-3xl section'>2</div>

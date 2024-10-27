@@ -1,6 +1,7 @@
 import React, { useEffect, useRef,useLayoutEffect  } from 'react';
 import { gsap } from 'gsap';
 import { IoMdUnlock } from "react-icons/io";
+// import '../components/WaveText.css';
 
 const ImageCard = ({ image }) => {
     return (
@@ -77,13 +78,33 @@ const HeroNew = () => {
     
     }, []);
 
+
+    // useEffect(() => {
+    //     // GSAP animation for the wave effect
+    //     const lines = mainTextRef.current.querySelectorAll(".line");
+    //     const clipStart = "polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%)";
+    //     const clipMid = "polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%)";
+
+    //     gsap.fromTo(
+    //         lines,
+    //         { clipPath: clipStart },
+    //         {
+    //             clipPath: clipMid,
+    //             duration: 2,
+    //             repeat: -1,
+    //             yoyo: true,
+    //             ease: "power1.inOut",
+    //         }
+    //     );
+    // }, []);
+
     return (
         <section className="relative text-white py-16 h-screen flex items-center overflow-hidden ">
             <div className="mx-auto  max-w-7xl relative z-10 text-center )]">
                 <div className="">
                     <h1 ref={headerRef} className='text-[#1b1c1d] font-light text-2xl'>[ KreateWave ]</h1>
-                    <h1 ref={mainTextRef} className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap">
-                        <div className="line ">Where</div>
+                    <h1 ref={mainTextRef} className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap flex flex-col justify-center items-center">
+                        <div className="line">Where</div>
                         <div className="line">Ideas</div>
                         <div className="line">Rave!</div>
                     </h1>

@@ -76,3 +76,19 @@
 }
 
 
+.stroke-text {
+  position: relative;
+  color: transparent; /* Hide the main text color */
+  -webkit-background-clip: text; /* Safari */
+  background-clip: text; /* For other browsers */
+}
+
+.stroke-text::before {
+  content: attr(data-text); /* Use the same text */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black; /* Stroke color */
+  z-index: -1; /* Place behind the main text */
+  filter: blur(1px); /* Add blur for stroke effect */
+}

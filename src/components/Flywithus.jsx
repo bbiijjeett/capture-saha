@@ -23,7 +23,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 const Flywithus = () => {
   return (
     <div className={`relative h-full md:h-[60vh] w-full  flex flex-col p-10 gap-10 justify-center items-center rounded-3xl border-black overflow-hidden `}>
-        <div className="absolute z-10 inset-0 bg-cover blur-sm object-top bg-[url('https://res.cloudinary.com/dgtcjadsp/image/upload/v1729960720/447586436_1175614883773261_2047765867233244242_n_1_c4pcj6.webp')]"></div>
+        <div className="absolute z-10 inset-0 bg-cover blur-md object-top bg-[url('https://res.cloudinary.com/dgtcjadsp/image/upload/v1729960720/447586436_1175614883773261_2047765867233244242_n_1_c4pcj6.webp')]"></div>
         <h1 className='text-3xl sm:text-5xl text-yellow-100 z-20 md:text-8xl font-bold text-center'>Ready to Surf Wave?</h1>
         <p className='font-normal shadow-sm text-yellow-100 z-20 text-xl text-center w-full md:w-3/4'>Whether you're looking to build a powerful personal brand, enhance your online presence, or create captivating content, KreateWave is here to help you achieve your goals. Let&apos;s collaborate and bring your vision to life.</p>
         {/* <a href='https://calendly.com/workwithsaumajyoti/30min' className='bg-red-500 z-20 text-white px-4 py-2 rounded-full font-semibold text-center flex items-center justify-center gap-2'>
@@ -33,9 +33,9 @@ const Flywithus = () => {
         </a> */}
         <a
           href='https://calendly.com/workwithsaumajyoti/30min'
-          class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-red-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+          class="flex justify-center text-red-500 gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-red-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
         >
-          Book a Discovery call
+          Schedule call
           <svg
             class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-red-500 ease-linear duration-300 rounded-full border border-red-500 group-hover:border-none p-2 rotate-45"
             viewBox="0 0 16 19"

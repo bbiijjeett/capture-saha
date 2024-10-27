@@ -25,7 +25,7 @@ const TitleMagic = () => {
     //   );
     setTimeout(() => {
         el.classList.add('active');
-      }, 500 * idx);
+      }, 750 * idx);
 
       
 
@@ -41,7 +41,7 @@ const TitleMagic = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center  text-[#333333] font-anton">
+    <div className="flex flex-col items-center  text-black font-anton">
       <div className="word flex space-x-2 mt-20">
         {letters.map((letter, idx) => (
           <span
