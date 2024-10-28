@@ -5,6 +5,7 @@ import { MdRadioButtonChecked } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import LockUnlockbtn from '@/components/LockUnlockbtn';
+import { MdAdd, MdRemove } from 'react-icons/md';
 
 const services = [
   {
@@ -111,7 +112,13 @@ const Accordion = ({ items }) => {
             className="w-full text-xl text-left py-10 px-6 font-semibold bg-[#FFFFFF] shadow-sm rounded-3xl focus:outline-none"
             onClick={() => handleToggle(index)}
           >
-            {item.title}
+            <div className='flex justify-between'>
+              {item.title}
+              <MdAdd
+                size={36}
+                className={`transition-transform duration-300 ${openIndex === index ? 'rotate-45' : 'rotate-0'}`}
+              />
+            </div>
             {openIndex === index && (
             <div className="py-4 bg-[#FFFFFF] font-light text-base text-gray-700">
               {item.description}
