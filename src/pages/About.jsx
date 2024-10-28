@@ -176,7 +176,7 @@ const About = () => {
                   <h3 className='text-2xl'>Clients</h3>
                 </div>
                 <p className='text-gray-500'>Across Technology, Healthcare, Finance, and beyond </p> */}
-                <img className='object-cover h-full w-full'  src='https://res.cloudinary.com/dgtcjadsp/image/upload/t_sqaure/v1729960723/DSC01702_zbrmjl.webp' />
+                <img className='object-cover h-full w-full'  src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729976782/DSC01702_zbrmjl-sqaure_euql83.webp' />
                 {/* <iframe className='object-fill h-full w-full' src="https://www.behance.net/embed/project/134211901?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe> */}
                 {/* <iframe className='object-fill min-h-[10rem] w-full' src="https://www.behance.net/embed/project/135696725?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe> */}
               </div>
