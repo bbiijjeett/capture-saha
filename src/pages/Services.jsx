@@ -4,6 +4,7 @@ import CustomButton  from '@/components/CustomButton';
 import { MdRadioButtonChecked } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import LockUnlockbtn from '@/components/LockUnlockbtn';
 
 const services = [
   {
@@ -135,7 +136,8 @@ const Services = () => {
             <p className='font-light text-sm mb-2'>Branding and Social media</p>
             <h1 className='font-semibold text-lg mb-2'>Building Identities and Digital Connections</h1>
             <p className='font-normal text-base lg:w-2/3 text-gray-500 mb-5'>Helping brands define their identity and connect with audiences through impactful branding and engaging social media strategies.</p>
-            <button className='bg-red-500 text-white px-4 py-2 rounded-full font-semibold text-center'>Start Today</button>
+            {/* <button className='bg-red-500 text-white px-4 py-2 rounded-full font-semibold text-center'>Unlock Now</button> */}
+            <LockUnlockbtn/>
           </div>
           <div className=' md:w-1/2  overflow-hidden'>
             <img className='aspect-video h-full w-full rounded-3xl' src='https://framerusercontent.com/images/rKtachec8bWSlLf3AJFraLaXEs.gif' />
@@ -149,7 +151,8 @@ const Services = () => {
             <p className='font-light text-sm mb-2'>Website Design & Development</p>
             <h1 className='font-semibold text-lg mb-2'>Crafting Engaging Digital Experiences</h1>
             <p className='font-normal text-base lg:w-2/3 text-gray-500 mb-5'>Building responsive, user-centered websites that blend design and functionality to elevate your online presence.</p>
-            <button className='bg-red-500 text-white px-4 py-2 rounded-full font-semibold text-center'>Start Today</button>
+            {/* <button className='bg-red-500 text-white px-4 py-2 rounded-full font-semibold text-center'>Unlock Now</button> */}
+            <LockUnlockbtn/>
           </div>
         </div>
         <div className='flex flex-col md:flex-row p-5'>
@@ -157,7 +160,8 @@ const Services = () => {
             <p className='font-light text-sm mb-2'>Graphic Design & Illustrations</p>
             <h1 className='font-semibold text-lg mb-2'>Bringing Ideas to Life with Artful Precision and Creativity</h1>
             <p className='font-normal text-base lg:w-2/3 text-gray-500 mb-5'>We create visually stunning designs that not only capture attention but also effectively convey your brand's message.</p>
-            <button className='bg-red-500 text-white px-4 py-2 rounded-full font-semibold text-center'>Start Today</button>
+            {/* <button className='bg-red-500 text-white px-4 py-2 rounded-full font-semibold text-center'>Unlock Now</button> */}
+            <LockUnlockbtn/>
           </div>
           <div className='md:w-1/2  overflow-hidden'>
             <img className='aspect-video h-full w-full rounded-3xl' src='https://framerusercontent.com/images/Mh7W5IkUcHeA1Usj0CnzNmuJvns.gif' />
