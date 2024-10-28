@@ -22,7 +22,9 @@ export default Test;
 
 //   // Filtered projects based on selected filter
 //   const filteredProjects = filter === 'All' ? projects : projects.filter((project) => project.type === filter);
-
+//https://www.youtube.com/watch?v=Z6Fh5_PDd9s&list=PL8bX3D8aBEpmXCdk8z8H7HOi7NS-4AdGr&index=12
+//https://www.youtube.com/watch?v=FM4ekrZJv2s
+//https://www.youtube.com/results?search_query=Image+Trail+Effect+On+MouseMove+react
 //   return (
 //     <div className="py-12 px-4 bg-[#1B1C1D]">
 //       {/* Filter Section */}

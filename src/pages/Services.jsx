@@ -147,12 +147,12 @@ const Services = () => {
             <LockUnlockbtn/>
           </div>
           <div className=' md:w-1/2  overflow-hidden'>
-            <img className='aspect-video h-full w-full rounded-3xl' src='https://framerusercontent.com/images/rKtachec8bWSlLf3AJFraLaXEs.gif' />
+            <img className='aspect-video h-full w-full rounded-3xl' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1730113815/insta_l6spic.gif' />
           </div>
         </div>
         <div className='flex flex-col-reverse md:flex-row p-5'>
           <div className='md:w-1/2  overflow-hidden'>
-            <img className='aspect-video h-full w-full rounded-3xl' src='https://framerusercontent.com/images/feZKpDJv0jnJKp1Xwh5sy8SxSY.gif' />
+            <img className='aspect-video h-full w-full rounded-3xl' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1730111913/202410281603_n3lros.gif' />
           </div>
           <div className='md:w-1/2 py-5 sm:p-10'>
             <p className='font-light text-sm mb-2'>Website Design & Development</p>
@@ -171,7 +171,7 @@ const Services = () => {
             <LockUnlockbtn/>
           </div>
           <div className='md:w-1/2  overflow-hidden'>
-            <img className='aspect-video h-full w-full rounded-3xl' src='https://framerusercontent.com/images/Mh7W5IkUcHeA1Usj0CnzNmuJvns.gif' />
+            <img className='aspect-video h-full w-full rounded-3xl' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1730114243/GfqV_jzxn6m.gif' />
           </div>
         </div>
         <div className='p-2 md:p-10 flex flex-col md:flex-row gap-5'>
