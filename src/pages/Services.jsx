@@ -247,12 +247,12 @@ const Services = () => {
           </div>
         </div>
       </div> */}
-      <div className='flex flex-col h-auto gap-5 my-10 mx-2 md:mx-10'>
+      <div className='flex flex-col h-auto gap-5 my-10 mx-2 md:mx-5 lg:mx-10'>
         <h1 className='font-bold text-5xl md:text-7xl text-white text-center mb-2'>Pricing</h1>
-        <div className='flex flex-col lg:flex-row h-full px-2 md:px-5 lg:px-20 justify-center items-center gap-5'>
+        <div className='flex flex-col lg:flex-row h-full px-2 md:px-5    justify-center items-center gap-5'>
           
           {/* Social Media Package */}
-          <div className='bg-white h-full sm:min-h-[100vh] w-full lg:w-1/3 rounded-xl py-5'>
+          <div className='bg-white h-full md:min-h-[100vh] w-full lg:w-1/3 rounded-xl py-5'>
             <div className='flex flex-col p-5 md:p-10'>
               <p className='font-light text-base md:text-lg capitalize'>Social media package</p>
               <h1 className='font-bold text-4xl md:text-5xl'>$399/m</h1>
@@ -274,7 +274,7 @@ const Services = () => {
           </div>
 
           {/* Lite Package */}
-          <div className='bg-white h-full sm:min-h-[100vh] w-full lg:w-1/3 rounded-xl py-5'>
+          <div className='bg-white h-full md:min-h-[100vh] w-full lg:w-1/3 rounded-xl py-5'>
             <div className='flex flex-col p-5 md:p-10'>
               <p className='font-light text-base md:text-lg capitalize'>Lite Package</p>
               <h1 className='font-bold text-4xl md:text-5xl'>$699/m</h1>
@@ -293,7 +293,7 @@ const Services = () => {
           </div>
 
           {/* Single Project */}
-          <div className='bg-white h-full sm:min-h-[100vh] w-full lg:w-1/3 rounded-xl py-5   '>
+          <div className='bg-white h-full md:min-h-[100vh] w-full lg:w-1/3 rounded-xl py-5   '>
             <div className='flex flex-col p-5 md:p-10'>
               <p className='font-light text-base md:text-lg capitalize'>Single project</p>
               <h1 className='font-bold text-4xl md:text-5xl'>Custom</h1>

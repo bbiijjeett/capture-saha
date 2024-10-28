@@ -269,7 +269,7 @@ const Service = () => {
                   ref={imgRefs[4]}
                   onMouseEnter={() => animateImage(imgRefs[4], 1.05, -5)}
                   onMouseLeave={() => animateImage(imgRefs[4], 1, 0)}
-                  className="  w-1/3 object-cover"
+                  className="  w-1/2 sm:w-1/3 object-cover"
                   // src="https://res.cloudinary.com/dgtcjadsp/image/upload/v1730018550/undraw_designer_life_re_6ywf_y4qs9n.svg"
                   src="https://opendoodles.s3-us-west-1.amazonaws.com/meditating.svg"
                   style={{
@@ -296,7 +296,7 @@ const Service = () => {
                   ref={imgRefs[5]}
                   onMouseEnter={() => animateImage(imgRefs[5], 1.05, -5)}
                   onMouseLeave={() => animateImage(imgRefs[5], 1, 0)}
-                  className="  w-1/3   object-cover"
+                  className=" w-1/2 sm:w-1/3   object-cover"
                   // src="https://res.cloudinary.com/dgtcjadsp/image/upload/v1730018185/undraw_social_thinking_re_y8cc_xsxxzl.svg"
                   src="https://opendoodles.s3-us-west-1.amazonaws.com/loving.svg"
                   style={{
