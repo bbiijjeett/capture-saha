@@ -125,7 +125,7 @@ const Contact = () => {
             </a>
             {/* <a 
               href='#' 
-              className='font-light hover:text-red-500' 
+              className='font-light hover:text-red-500'   
               onMouseEnter={() => handleMouseEnter(phoneRef)} 
               onMouseLeave={() => handleMouseLeave(phoneRef)}
             >

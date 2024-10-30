@@ -141,8 +141,8 @@ const Services = () => {
 
         <div className='p-2 md:p-10 flex flex-col md:flex-row gap-5'>
           <div className='w-full md:w-1/2'>
-            <h1 className='font-bold text-5xl md:text-6xl mb-5'>Our Bundles</h1>
-            <p className='font-light text-2xl md:w-2/3 text-pretty'>We specialize in creating striking visuals, unique brand identities, cutting-edge products, and engaging websites, all driven by a team of talented young professionals.</p>
+            <h1 className='font-bold text-3xl nd:text-5xl md:text-6xl mb-5'>Our Bundles</h1>
+            <p className='font-light text-xl md:w-2/3 text-pretty'>We specialize in creating striking visuals, unique brand identities, cutting-edge products, and engaging websites, all driven by a team of talented young professionals.</p>
           </div>
           <div className=' w-full md:w-1/2'>
             <Accordion items={services} />  
@@ -264,7 +264,7 @@ const Services = () => {
               <p className='font-normal text-lg md:text-xl'>Perfect to get started with kyte</p>
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 mb-5'>
-              <CustomButton title={'Get Started'} />
+              <CustomButton url={'#flywithus'} title={'Get Started'} />
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 gap-2'>
               {socialMediaPackages.map((item, index) => (
@@ -286,7 +286,7 @@ const Services = () => {
               <p className='font-normal text-lg md:text-xl'>For Small And Midsize Business</p>
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 mb-5'>
-              <CustomButton title={'Get Started'} />
+              <CustomButton url={'#flywithus'} title={'Get Started'} />
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 gap-2'>
               {litePackage.map((item, index) => (
@@ -305,8 +305,8 @@ const Services = () => {
               <p className='font-normal text-lg md:text-xl'>Cost Effective Tailored Solutions</p>
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 gap-3 mb-5'>
-              <CustomButton title={'Request Quote'} />
-              <CustomButton title={'Book Discovery Session'} />
+              <CustomButton color={'bg-red-500'} title={'Request Quote'} />
+              <CustomButton url={'#flywithus'} title={'Book Discovery Session'} />
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 gap-2'>
               {customPackage.map((item, index) => (

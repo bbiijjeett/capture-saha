@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const CustomButton  = ({title}) => {
+const CustomButton = ({ title, url, color }) => {
   return (
-    <button className='bg-black w-full text-white px-4 py-2 rounded-full font-semibold text-center'>{title}</button>
-  )
+    <a 
+      href={url} 
+      className={`${
+        color ? color : 'bg-black'
+      } w-full text-white px-4 py-2 rounded-full font-semibold text-center`}
+    >
+      {title}
+    </a>
+  );
 }
 
-export default CustomButton 
+export default CustomButton;
