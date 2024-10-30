@@ -27,7 +27,7 @@ const About = () => {
           <div className="flex h-full w-full items-center justify-center">
             <div className="grid h-full w-full gap-4 p-2 grid-cols-1 md:grid-cols-3 grid-rows-1 ">
               <div
-                className="col-span-1 row-span-1 flex flex-col items-center justify-center"
+                className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={somo} />
                 {/* <p className='font-semibold'>soumajyoti</p> */}
@@ -35,7 +35,7 @@ const About = () => {
                 <a href='https://www.instagram.com/soumajyoti_saha/'>@soumajyoti_saha</a>
               </div>
               <div
-                className="col-span-1 row-span-1 flex flex-col items-center justify-center"
+                className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={bijeet} />
                 {/* <p className='font-semibold'>Bijeet </p> */}
@@ -43,7 +43,7 @@ const About = () => {
               </div>
 
               <div
-                className="col-span-1 row-span-1 flex flex-col items-center justify-center"
+                className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={adit} />
                 {/* <p className='font-semibold'>Adit</p> */}
@@ -52,17 +52,17 @@ const About = () => {
 
             </div>
           </div>
-          <div className="flex h-full w-full items-center justify-center">
+          <div className="flex h-full w-full items-center justify-center ">
             <div className="grid h-full w-full gap-4 md:px-28 grid-cols-1 md:grid-cols-2 grid-rows-1 ">
               <div
-                className="col-span-1 row-span-1 flex flex-col items-center justify-center"
+                className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={soubhick} />
                 {/* <p className='font-semibold'>Soubhick</p> */}
                 <a href='https://www.instagram.com/_random_guy_/'>@_random_guy_</a>
               </div>
               <div
-                className="col-span-1 row-span-1 flex flex-col items-center justify-center"
+                className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={ambar} />
                 {/* <p className='font-semibold'>Ambar</p> */}

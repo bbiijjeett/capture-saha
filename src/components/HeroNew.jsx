@@ -109,7 +109,7 @@ const HeroNew = () => {
                         <div className="line">Rave!</div>
                     </h1>
                     <div ref={getStartedRef} className="mt-8">
-                        <a href="#" className="text-lg text-white bg-black hover:bg-red-500 transition-colors duration-300 px-4 py-2 rounded-full font-semibold">
+                        <a href="#flywithus" className="text-lg text-white bg-black hover:bg-red-500 transition-colors duration-300 px-4 py-2 rounded-full font-semibold">
                             Get Started
                         </a>
                     </div>

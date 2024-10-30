@@ -96,7 +96,7 @@ const Contact = () => {
           <div className='p-2 flex flex-col gap-2'>
             <h1 className='font-bold text-4xl'>Social</h1>
             <a 
-              href='#' 
+              href='https://www.instagram.com/capturewithsaha/' 
               className='font-light hover:text-red-500' 
               onMouseEnter={() => handleMouseEnter(cameraRef)} 
               onMouseLeave={() => handleMouseLeave(cameraRef)}
@@ -104,7 +104,7 @@ const Contact = () => {
               Instagram
             </a>
             <a 
-              href='#' 
+              href='https://www.linkedin.com/in/saumajyoti-saha/' 
               className='font-light hover:text-red-500' 
               onMouseEnter={() => handleMouseEnter(maxRef)} 
               onMouseLeave={() => handleMouseLeave(maxRef)}
@@ -116,27 +116,27 @@ const Contact = () => {
           <div className='p-2 flex flex-col gap-2'>
             <h1 className='font-bold text-4xl'>Contact</h1>
             <a 
-              href='#' 
+              href='mailto:workwithsaumajyoti@gmail.com' 
               className='font-light hover:text-red-500' 
               onMouseEnter={() => handleMouseEnter(letterRef)} 
               onMouseLeave={() => handleMouseLeave(letterRef)}
             >
-              hello@kreatewave.com
+              workwithsaumajyoti@gmail.com
             </a>
-            <a 
+            {/* <a 
               href='#' 
               className='font-light hover:text-red-500' 
               onMouseEnter={() => handleMouseEnter(phoneRef)} 
               onMouseLeave={() => handleMouseLeave(phoneRef)}
             >
               +91-9999999999
-            </a>
+            </a> */}
             
           </div>
           <div className='p-2 flex flex-col gap-2'>
             <h1 className='font-bold text-4xl'>Address</h1>
             <p className='font-light'>Bengaluru, Karnataka</p>
-            <img className='rounded-3xl h-32 w-64 hover:scale-105 shadow-lg transition-all duration-300' src={map} />
+            <img className='rounded-3xl h-24 w-48 md:h-32 md:w-64 hover:scale-105 shadow-lg transition-all duration-300' src={map} />
           </div>
         </div>
       </div>

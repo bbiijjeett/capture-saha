@@ -25,7 +25,7 @@ const FooterNew = () => {
             <h1 className='text-white font-semibold'>Contact</h1>
             {/* <p className='font-normal text-gray-400 hover:text-white transition-all duration-300'>+91-999999999</p> */}
             {/* <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Linked.in</a> */}
-            <a href='mailto:hello@kreatewave.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
+            <a href='mailto:workwithsaumajyoti@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
         </div>
         
         <div className='flex flex-col md:items-start gap-2'>

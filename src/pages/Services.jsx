@@ -120,7 +120,7 @@ const Accordion = ({ items }) => {
               />
             </div>
             {openIndex === index && (
-            <div className="py-4 bg-[#FFFFFF] font-light text-base text-gray-700">
+            <div className="py-4 bg-[#FFFFFF] font-light text-base text-gray-700  transition-all duration-300 ease-in-out ">
               {item.description}
             </div>
           )}
@@ -138,6 +138,17 @@ const Services = () => {
     <section className='min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D]'>
       <div></div>
       <div className='bg-[#FAF7F0] h-fit w-full rounded-3xl p-5'>
+
+        <div className='p-2 md:p-10 flex flex-col md:flex-row gap-5'>
+          <div className='w-full md:w-1/2'>
+            <h1 className='font-bold text-5xl md:text-6xl mb-5'>Our Bundles</h1>
+            <p className='font-light text-2xl md:w-2/3 text-pretty'>We specialize in creating striking visuals, unique brand identities, cutting-edge products, and engaging websites, all driven by a team of talented young professionals.</p>
+          </div>
+          <div className=' w-full md:w-1/2'>
+            <Accordion items={services} />  
+          </div>
+        </div>
+        
         <div className='flex flex-col md:flex-row p-5 '>
           <div className='md:w-1/2 py-5 sm:p-10'>
             <p className='font-light text-sm mb-2'>Branding and Social media</p>
@@ -174,15 +185,9 @@ const Services = () => {
             <img className='aspect-video h-full w-full rounded-3xl' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1730114243/GfqV_jzxn6m.gif' />
           </div>
         </div>
-        <div className='p-2 md:p-10 flex flex-col md:flex-row gap-5'>
-          <div className='w-full md:w-1/2'>
-            <h1 className='font-bold text-5xl md:text-6xl mb-5'>Our Bundles</h1>
-            <p className='font-light text-2xl md:w-2/3 text-pretty'>We specialize in creating striking visuals, unique brand identities, cutting-edge products, and engaging websites, all driven by a team of talented young professionals.</p>
-          </div>
-          <div className=' w-full md:w-1/2'>
-            <Accordion items={services} />
-          </div>
-        </div>
+
+        
+        
       </div>
       {/* <div className='flex flex-col h-[110vh] gap-5 my-10'>
         <h1 className='font-bold text-7xl text-white text-center'>Pricing</h1>
@@ -247,7 +252,7 @@ const Services = () => {
           </div>
         </div>
       </div> */}
-      <div className='flex flex-col h-auto gap-5 my-10 mx-2 md:mx-5 lg:mx-10'>
+      <div id='ourbundles' className='flex flex-col h-auto gap-5 my-10 mx-2 md:mx-5 lg:mx-10'>
         <h1 className='font-bold text-5xl md:text-7xl text-white text-center mb-2'>Pricing</h1>
         <div className='flex flex-col lg:flex-row h-full px-2 md:px-5    justify-center items-center gap-5'>
           
