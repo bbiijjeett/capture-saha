@@ -124,8 +124,11 @@
 // export default Service
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Service = () => {
+  const { scrollY } = useScroll();
+  const scale = useTransform(scrollY, [3300, 3800], [1, 0.8]);
   // Create refs for each img element
   const imgRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
 
@@ -146,7 +149,7 @@ const Service = () => {
         <p className="text-center text-lg md:text-2xl font-medium mb-5">
           We specialize in creating eye-catching visuals, modern brand identities, innovative products, and immersive websites.
         </p>
-        <div className="h-full w-full">
+        <motion.div style={{ scale }} className="h-full w-full">
           <div className="flex h-full w-full items-center justify-center">
             <div className="grid h-full text-black w-full gap-4 p-2 grid-cols-4 md:grid-cols-4 grid-rows-4 md:grid-rows-8 lg:grid-rows-4">
               {/* Branding Card */}
@@ -308,7 +311,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

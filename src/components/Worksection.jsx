@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const projects = [
   {
@@ -65,6 +66,9 @@ const projects = [
 const filterOptions = ['All', 'WEB', 'UI & UX', 'GRAPHICS', 'BRANDING', 'SOCIAL MEDIA'];
 
 const Worksection = () => {
+  const { scrollY } = useScroll();
+  const scale = useTransform(scrollY, [2500, 3000], [1, 0.8]);
+
   const [filter, setFilter] = useState('All');
   const cardRefs = useRef([]);
 
@@ -94,7 +98,7 @@ const Worksection = () => {
   }, [filteredProjects]);
 
   return (
-    <div className="py-12 px-4 bg-[#1B1C1D]">
+    <div   className="py-12 px-4 bg-[#1B1C1D]">
       <div className="text-center mb-8">
         {/* <div className="flex flex-wrap justify-center space-x-2 overflow-x-auto">
           {filterOptions.map((option) => (
@@ -125,7 +129,7 @@ const Worksection = () => {
       </div>
 
           
-      <div className="p-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 perspective-1000">
+      <motion.div style={{ scale }} className="p-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 perspective-1000">
         {filteredProjects.map((project, index) => (
           <div
             key={index}
@@ -183,7 +187,7 @@ const Worksection = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

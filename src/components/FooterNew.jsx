@@ -3,11 +3,11 @@ import { useLocation } from 'react-router-dom';
 
 const team = [
     
-    { id:'1',name: 'Soumajyoti Saha', ig: 'https://www.instagram.com/soumajyoti_saha/' },
-    { id:'2',name: 'Bijeet Nath', ig: 'https://www.instagram.com/bbiijjeett/' },
-    { id:'3',name: 'Adit Saha', ig: 'https://www.instagram.com/_illumin_adi_/' },
-    { id:'4',name: 'Soubhick Bhattacharjee', ig: 'https://www.instagram.com/_random_guy_/' },
-    { id:'5',name: 'Ambar Saha', ig: 'https://www.instagram.com/the.saha.sky/' },
+    { id:'1',name: 'Soumajyoti Saha', ig: 'https://www.linkedin.com/in/saumajyoti-saha/' },
+    { id:'2',name: 'Bijeet Nath', ig: 'https://www.linkedin.com/in/bbiijjeett/' },
+    { id:'3',name: 'Adit Saha', ig: 'https://www.linkedin.com/in/adit-saha-a40b34212/' },
+    { id:'4',name: 'Soubhick Bhattacharjee', ig: 'https://www.linkedin.com/in/soubhick/' },
+    { id:'5',name: 'Ambar Saha', ig: 'https://www.linkedin.com/in/ambar-saha-a971b3143/' },
 ]
 
 const FooterNew = () => {
@@ -19,7 +19,7 @@ const FooterNew = () => {
   return (
     <footer className={`${isHomePage ? 'rounded-tl-3xl rounded-tr-3xl' : ' '}  flex flex-col md:flex-row gap-5 md:gap-0 text-center items-center md:items-baseline justify-around bg-[#1b1c1d] py-10`}>
         <div className='flex flex-col md:items-start gap-2'>
-            <p className='text-white font-black text-2xl'>ArtisanCrew</p>
+            <p className='text-white font-black text-2xl'>Artisan<span className='text-red-500 text-2xl'>Crew</span>.co</p>
         </div>
         <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Contact</h1>

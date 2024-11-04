@@ -32,14 +32,14 @@ const About = () => {
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={somo} />
                 {/* <p className='font-semibold'>soumajyoti</p> */}
                 
-                <a href='https://www.instagram.com/soumajyoti_saha/'>@soumajyoti_saha</a>
+                <a href='https://www.linkedin.com/in/saumajyoti-saha/'>@soumajyoti</a>
               </div>
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={bijeet} />
                 {/* <p className='font-semibold'>Bijeet </p> */}
-                <a href='https://www.instagram.com/bbiijjeett/'>@bbiijjeett</a>
+                <a href='https://www.linkedin.com/in/bbiijjeett/'>@bijeet</a>
               </div>
 
               <div
@@ -47,7 +47,7 @@ const About = () => {
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={adit} />
                 {/* <p className='font-semibold'>Adit</p> */}
-                <a href='https://www.instagram.com/_illumin_adi_/'>@_illumin_adi_</a>
+                <a href='https://www.linkedin.com/in/adit-saha-a40b34212/'>@adit</a>
               </div>
 
             </div>
@@ -59,14 +59,14 @@ const About = () => {
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={soubhick} />
                 {/* <p className='font-semibold'>Soubhick</p> */}
-                <a href='https://www.instagram.com/_random_guy_/'>@_random_guy_</a>
+                <a href='https://www.linkedin.com/in/soubhick/'>@soubhick</a>
               </div>
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={ambar} />
                 {/* <p className='font-semibold'>Ambar</p> */}
-                <a href='https://www.instagram.com/the.saha.sky/ '>@the.saha.sky</a>
+                <a href='https://www.linkedin.com/in/ambar-saha-a971b3143/'>@ambar</a>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ const About = () => {
               {/* <span className='mr-0'>
                 <img src={apos2} className='h-3 w-3 inline translate-y-2 ' />
               </span> */}
-                "At ArtisanCrew, we believe that the driving forces behind every successful brand are curiosity and creativity.These values fuel our passion for innovation and guide every decision we make."
+                "At ArtisanCrew.co, we believe that the driving forces behind every successful brand are curiosity and creativity.These values fuel our passion for innovation and guide every decision we make."
               {/* <span className='ml-0'>
                 <img src={apos2} className='h-3 rotate-180 w-3 inline translate-y-2 ' />
               </span> */}

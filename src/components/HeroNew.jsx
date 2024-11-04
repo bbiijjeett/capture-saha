@@ -2,6 +2,7 @@ import React, { useEffect, useRef,useLayoutEffect  } from 'react';
 import { gsap } from 'gsap';
 import { IoMdUnlock } from "react-icons/io";
 // import '../components/WaveText.css';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const ImageCard = ({ image }) => {
     return (
@@ -29,6 +30,10 @@ const HeroNew = () => {
     const headerRef = useRef(null);
     const mainTextRef = useRef(null);
     const getStartedRef = useRef(null);
+
+    const { scrollY } = useScroll();
+    const scale = useTransform(scrollY, [0, 500], [1, 0.8]);
+    const opacity = useTransform(scrollY, [0, 200], [1, 0.95 ]);
     
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -99,7 +104,7 @@ const HeroNew = () => {
     // }, []);
 
     return (
-        <section className="relative text-white py-16 h-screen flex items-center overflow-hidden ">
+        <motion.section style={{ scale, opacity }}  className="relative text-white py-16 h-screen flex items-center overflow-hidden ">
             <div className="mx-auto  max-w-7xl relative z-10 text-center )]">
                 <div className="">
                     <h1 ref={headerRef} className='text-[#1b1c1d] font-black text-2xl'>ArtisanCrew</h1>
@@ -137,7 +142,7 @@ const HeroNew = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };  
 
