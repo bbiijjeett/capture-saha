@@ -30,7 +30,7 @@ const FooterNew = () => {
         
         <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Follow Us</h1>
-            <a href='https://www.instagram.com/capturewithsaha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
+            <a href='https://www.instagram.com/artisancrewco/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
             <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
             {/* <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook.in</a> */}
         </div>

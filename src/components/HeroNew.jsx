@@ -104,12 +104,12 @@ const HeroNew = () => {
                 <div className="">
                     <h1 ref={headerRef} className='text-[#1b1c1d] font-black text-2xl'>ArtisanCrew</h1>
                     <h1 ref={mainTextRef} className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap flex flex-col justify-center items-center">
-                        <div className="line">Designs</div>
+                        <div className="line ">Designs</div>
                         <div className="line">That</div>
                         <div className="line">Woo!</div>
                     </h1>
                     <div ref={getStartedRef} className="mt-8">
-                        <a href="#flywithus" className="text-lg text-white bg-black hover:bg-red-500 transition-colors duration-300 px-4 py-2 rounded-full font-semibold">
+                        <a href="#flywithus" className="text-lg text-white hover:bg-black bg-red-500 transition-colors duration-300 px-4 py-2 rounded-full font-semibold">
                             Get Started
                         </a>
                     </div>
