@@ -88,6 +88,11 @@ span:nth-child(10).active {
   animation: toplong 1s linear;
 }
 
+span:nth-child(11).active {
+  animation: rotate 1s ease-out;
+}
+
+
 
 /* Animation for t */
  span:nth-child(9).active {

@@ -80,7 +80,7 @@ const About = () => {
               {/* <span className='mr-0'>
                 <img src={apos2} className='h-3 w-3 inline translate-y-2 ' />
               </span> */}
-                "At KreateWave, we believe that the driving forces behind every successful brand are curiosity and creativity.These values fuel our passion for innovation and guide every decision we make."
+                "At ArtisanCrew, we believe that the driving forces behind every successful brand are curiosity and creativity.These values fuel our passion for innovation and guide every decision we make."
               {/* <span className='ml-0'>
                 <img src={apos2} className='h-3 rotate-180 w-3 inline translate-y-2 ' />
               </span> */}
@@ -89,7 +89,7 @@ const About = () => {
           <div className="flex h-full w-full items-center justify-center">
             <div className="grid h-full w-full  gap-4  p-2 grid-cols-2 grid-rows-1 rounded-lg ">
               <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col md:p-10">
-                <p className='font-normal'>Our Values</p>
+                <p className='font-normal'>On</p>
                 <h1 className='font-semibold text-5xl md:w-1/2'>Curiosity</h1>
               </div>
               <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col gap-4 items-center justify-center md:pr-10 font-normal">
@@ -101,7 +101,7 @@ const About = () => {
           <div className="flex h-full w-full items-center justify-center">
             <div className="grid h-full w-full  gap-4  p-2 grid-cols-2 grid-rows-1 rounded-lg ">
               <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col md:p-10">
-                <p className='font-normal'>Our Mission</p>
+                <p className='font-normal'>On</p>
                 <h1 className='font-semibold text-5xl md:w-1/2'>Creativity</h1>
               </div>
               <div className="col-span-2 md:col-span-1 row-span-1 flex flex-col gap-4 items-center justify-center md:pr-10 font-normal">

@@ -102,11 +102,11 @@ const HeroNew = () => {
         <section className="relative text-white py-16 h-screen flex items-center overflow-hidden ">
             <div className="mx-auto  max-w-7xl relative z-10 text-center )]">
                 <div className="">
-                    <h1 ref={headerRef} className='text-[#1b1c1d] font-light text-2xl'>[ KreateWave ]</h1>
+                    <h1 ref={headerRef} className='text-[#1b1c1d] font-black text-2xl'>ArtisanCrew</h1>
                     <h1 ref={mainTextRef} className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap flex flex-col justify-center items-center">
-                        <div className="line">Where</div>
-                        <div className="line">Ideas</div>
-                        <div className="line">Rave!</div>
+                        <div className="line">Designs</div>
+                        <div className="line">That</div>
+                        <div className="line">Woo!</div>
                     </h1>
                     <div ref={getStartedRef} className="mt-8">
                         <a href="#flywithus" className="text-lg text-white bg-black hover:bg-red-500 transition-colors duration-300 px-4 py-2 rounded-full font-semibold">

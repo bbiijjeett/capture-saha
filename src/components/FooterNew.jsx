@@ -19,7 +19,7 @@ const FooterNew = () => {
   return (
     <footer className={`${isHomePage ? 'rounded-tl-3xl rounded-tr-3xl' : ' '}  flex flex-col md:flex-row gap-5 md:gap-0 text-center items-center md:items-baseline justify-around bg-[#1b1c1d] py-10`}>
         <div className='flex flex-col md:items-start gap-2'>
-            <p className='text-white font-semibold text-2xl'>[ KreateWave ]</p>
+            <p className='text-white font-black text-2xl'>ArtisanCrew</p>
         </div>
         <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Contact</h1>

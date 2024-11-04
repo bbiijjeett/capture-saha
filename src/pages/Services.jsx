@@ -182,7 +182,7 @@ const Services = () => {
             <LockUnlockbtn/>
           </div>
           <div className='md:w-1/2  overflow-hidden'>
-            <img className='aspect-video h-full w-full rounded-3xl' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1730114243/GfqV_jzxn6m.gif' />
+            <img className='aspect-video h-full w-full rounded-3xl' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1730325946/grapic_jlchra.gif' />
           </div>
         </div>
 
