@@ -9,11 +9,11 @@ import pic1 from '../assets/img/pic1.jpeg';
 import pic2 from '../assets/img/pic2.jpeg';
 
 const wallpapers = [
-  video1,
+  video3,
   pic1,
   video2,
   pic2,
-  video3
+  video1
   // Add more wallpaper URLs as needed
 ];
 

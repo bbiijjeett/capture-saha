@@ -3,9 +3,12 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import PhoneMockup from './PhoneMockup';
 import Worksection from './Worksection';
-import lottie1 from '../assets/wired_flat.json';
-import lottie2 from '../assets/wired_camera.json';
-import lottie3 from '../assets/wired_linkedin.json';
+import SparklesText from "@/components/ui/sparkles-text";
+// import lottie1 from '../assets/wired_flat.json';
+// import lottie2 from '../assets/wired_camera.json';
+// import lottie3 from '../assets/wired_linkedin.json';
+import Licking from '../assets/Liking.json';
+import VideoMessage from '../assets/VideoMessage.json';
 import Lottie from 'lottie-react';
 
 
@@ -38,6 +41,17 @@ const Work = () => {
         },
       }
     );
+
+    // Animation for sliding in from the right
+    gsap.from("#yellow", {
+      scale: 1.5,
+      scrollTrigger: {
+        trigger: "#yellow",
+        start: "top center",
+        end: "center center",
+        scrub: true,
+      },
+    });
 
     // Animation for sliding in from the right
     gsap.from("#moveright", {
@@ -75,12 +89,16 @@ const Work = () => {
       </div>
       <div id='snddiv' className=" bg-[#1B1C1D] h-screen p-10 md:p-5 w-full flex gap-2"> 
         <div id="moveleft" className="w-1/3   hidden md:flex items-center justify-center">
+          {/* <img className='absolute h-52  top-[0%] left-[36%] -rotate-8' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1730830267/3d-instagram-social-media-post-on-transparent-background-PNG_stvygc.png' /> */}
+
           <p className="font-bold text-[#FAF7F0] px-20 text-wrap text-5xl text-center">
-          Social media connects and inspires communities.
+             <SparklesText text="Social media" />  connects and inspires communities.
           </p>
-          <img className='absolute h-36 w-36 top-[9%] left-[46%] -rotate-12' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' />
+          <img className='absolute h-60  bottom-[5%] left-[33%] -rotate-8' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' />
+          <img className='absolute h-60  bottom-[2%] left-[33%] -rotate-12' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' />
+          
             {/* <img className='absolute h-36 w-36 bottom-[9%] left-[46%] rotate-12' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' /> */}
-            <Lottie 
+            {/* <Lottie 
               animationData={lottie1} 
               loop={true}  // Set to false if you only want it to play once
               // style={{ height: 100, width: 100 }}  // Adjust as needed
@@ -89,27 +107,26 @@ const Work = () => {
               className='absolute h-20 bottom-[10%] left-[56%] rotate-12'
               // onMouseEnter={handleMouseEnter}
               // onMouseLeave={handleMouseLeave}
-            />
+            /> */}
         </div>
         <div id="yellow" className="w-full md:w-1/3 flex   items-center justify-center">
           <PhoneMockup />
         </div>
-        <div id="moveright" className="w-1/3 hidden md:flex   items-center justify-center">
-          <Lottie 
-            animationData={lottie2} 
+        <div id="moveright" className="w-1/3 hidden md:flex  items-center justify-center">
+          {/* <Lottie 
+            animationData={Licking} 
             loop={true} 
-            className='absolute h-20 top-[12%] right-[56%]'
+            className='absolute h-56 top-[20%] right-[30%]'
             
-          />
-          <p className="font-thin text-[#FAF7F0] px-20 text-wrap text-xl text-center p-5">
+          /> */}
+          <Lottie 
+              animationData={VideoMessage} 
+              loop={true} 
+              className='absolute h-[90rem] -top-[40%]'
+            />
+          <p className="font-thin text-[#FAF7F0] px-20 text-wrap text-xl text-center p-5 absolute top-[20%]">
             So many voices unite, shaping our digital world every day.
           </p>
-          <Lottie 
-              animationData={lottie3} 
-              loop={true} 
-              className='absolute h-20 bottom-[16%] right-[66%]'
-              
-            />
         </div>
       </div>
       <Worksection/>
