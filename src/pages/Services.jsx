@@ -136,7 +136,7 @@ const Accordion = ({ items }) => {
 const Services = () => {
   return (
     <section className='min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D]'>
-      <div></div>
+      
       <div className='bg-[#FAF7F0] h-fit w-full rounded-3xl p-5'>
 
         <div className='p-2 md:p-10 flex flex-col md:flex-row gap-5'>
