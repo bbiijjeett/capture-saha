@@ -82,7 +82,7 @@ const Work = () => {
 
   return (
     <section>
-      <div id='firstdiv' className="h-[40vh] md:h-[70vh] bg-[#1B1C1D] rounded-tl-3xl rounded-tr-3xl p-5 flex items-center justify-center">
+      <div id='firstdiv' className="h-[40vh] md:h-[70vh] bg-[#1B1C1D] rounded-tl-3xl rounded-tr-3xl p-5 flex items-center justify-center mb-20 md:mb-0">
         <h1 id="project" className="font-black text-6xl text-[#FAF7F0]  md:text-8xl lg:text-9xl">
           PROJECTS<span className="text-red-500">.</span>
         </h1>
