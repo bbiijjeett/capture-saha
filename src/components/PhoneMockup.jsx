@@ -34,12 +34,12 @@ const PhoneMockup = () => {
     <div className='flex flex-col gap-5 items-center justify-center h-full'>
       <Iphone15Pro src={wallpapers[currentIndex]} />
       <div className='w-60 h-12 rounded-full bg-[#FAF7F0] border border-black flex items-center justify-between p-1'>
-        <button className='bg-black rounded-full p-2' onClick={previousWallpaper}>
-        <FaArrowLeft color='white'  />
+        <button className='bg-black rounded-full p-2 group/button' onClick={previousWallpaper}>
+        <FaArrowLeft color='white' className='group-hover/button:rotate-12 transition-transform duration-300' />
         </button>
         <p className='text-lg font-mono'>reels</p>
-        <button className='bg-black rounded-full p-2' onClick={nextWallpaper}>
-          <FaArrowRight color='white' />
+        <button className='bg-black rounded-full p-2 group/button' onClick={nextWallpaper}>
+          <FaArrowRight color='white' className='group-hover/button:-rotate-12 transition-transform duration-300' />
         </button>
       </div>
     </div>

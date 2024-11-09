@@ -1,18 +1,44 @@
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/all';
 import Flywithus from '@/components/Flywithus';
-import React from 'react';
 import bijeet from '../assets/img/bijeet.jpeg';
 import somo from '../assets/img/somo.webp';
 import adit from '../assets/img/adit.webp';
 import soubhick from '../assets/img/soubhick.webp';
 import ambar from '../assets/img/ambar.jpeg';
-import apos1 from '../assets/img/apos1.png';
-import apos2 from '../assets/img/apos2.png';
-import { FaInstagram } from "react-icons/fa";
-import video3 from '../assets/video/video2.gif';
-import 'animate.css';
-import TitleMagic from '@/components/TitleMagic';
+import aditya from '../assets/img/arudipto.jpg';
+import { WobbleCard } from "../components/ui/wobble-card";
+import { ProfileCard } from '@/components/ProfileCard';
 
+import Lottie from 'lottie-react';
+import avatar from "../assets/avatar.json"
+
+// import apos1 from '../assets/img/apos1.png';
+// import apos2 from '../assets/img/apos2.png';
+// import { FaInstagram } from "react-icons/fa";
+// import video3 from '../assets/video/video2.gif';
+// import 'animate.css';
+// import TitleMagic from '@/components/TitleMagic';
+
+// gsap.registerPlugin(ScrambleTextPlugin);
+gsap.registerPlugin(TextPlugin)
 const About = () => {
+
+  // const titleRef = useRef(null);
+
+  // useEffect(() => {
+  //   // Apply the scramble effect on component mount
+  //   gsap.to(titleRef.current, {
+  //     duration: 2,
+  //     text: {
+  //       value: "Artisan Crew. Co",
+  //       newClass: "class2",
+  //       delimiter: " ",
+  //     }
+  //   });
+  // }, []);
+
   return (
     <section className='flex flex-col gap-5 min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D] '>
 
@@ -26,50 +52,125 @@ const About = () => {
         <div id='teampic' className='flex flex-col gap-5 my-14'>
           <div className="flex h-full w-full items-center justify-center">
             <div className="grid h-full w-full gap-4 p-2 grid-cols-1 md:grid-cols-3 grid-rows-1 ">
-              <div
+              {/* <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
-              >
-                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={somo} />
-                {/* <p className='font-semibold'>soumajyoti</p> */}
-                
-                <a href='https://www.linkedin.com/in/saumajyoti-saha/'>@soumajyoti</a>
-              </div>
-              <div
+              > */}
+              
+                {/* <div
+                  className="col-span-1 row-span-1 flex flex-col items-center justify-center"
+                >
+                  <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={somo} />
+                  <a href='https://www.linkedin.com/in/saumajyoti-saha/'>@soumajyoti</a>
+                </div> */}
+                  
+                <ProfileCard
+                  imageUrl={somo}
+                  profileLink="https://www.linkedin.com/in/saumajyoti-saha/"
+                  name="saumajyoti"
+                  containerClassName="hover:scale-105"
+                />
+                {/* <Lottie
+                  animationData={avatar}
+                  loop={true}
+                  // className='h-[40vh] md:h-[60vh] lg:h-[70vh] w-full '
+                /> */}
+
+                <ProfileCard
+                  imageUrl={bijeet}
+                  profileLink="https://www.linkedin.com/in/bbiijjeett/"
+                  name="bijeet"
+                  containerClassName="hover:scale-105"
+                />
+
+                <ProfileCard
+                  imageUrl={adit}
+                  profileLink="https://www.linkedin.com/in/adit-saha-a40b34212"
+                  name="adit"
+                  containerClassName="hover:scale-105"
+                />
+              
+
+              {/* <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={bijeet} />
-                {/* <p className='font-semibold'>Bijeet </p> */}
                 <a href='https://www.linkedin.com/in/bbiijjeett/'>@bijeet</a>
-              </div>
+              </div> */}
 
-              <div
+              {/* <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={adit} />
-                {/* <p className='font-semibold'>Adit</p> */}
                 <a href='https://www.linkedin.com/in/adit-saha-a40b34212/'>@adit</a>
-              </div>
+              </div> */}
 
             </div>
           </div>
-          <div className="flex h-full w-full items-center justify-center ">
+          <div className="flex h-full w-full items-center justify-center">
+            <div className="grid h-full w-full gap-4 px-2 md:px-32 grid-cols-1 md:grid-cols-3 grid-rows-1 ">
+              
+                <ProfileCard
+                  imageUrl={ambar}
+                  profileLink="https://www.linkedin.com/in/ambar-saha-a971b3143/"
+                  name="ambar"
+                  containerClassName="hover:scale-105"
+                />
+              
+              {/* <div
+                className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
+              >
+                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={ambar} />
+                <a href='https://www.linkedin.com/in/ambar-saha-a971b3143/'>@ambar</a>
+              </div> */}
+
+                <ProfileCard
+                  imageUrl={soubhick}
+                  profileLink="https://www.linkedin.com/in/soubhick/"
+                  name="soubhick"
+                  containerClassName="hover:scale-105"
+                />
+
+              {/* <div
+                className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
+              >
+                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={soubhick} />
+                <a href='https://www.linkedin.com/in/soubhick/'>@soubhick</a>
+              </div> */}
+              
+                <ProfileCard
+                  imageUrl={aditya}
+                  profileLink="https://www.linkedin.com/in/adityaaurodipta/"
+                  name="aditya"
+                  containerClassName="hover:scale-105"
+                />
+
+              {/* <div
+                className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
+              >
+                <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={aditya} />
+                <a href='https://www.linkedin.com/in/adityaaurodipta/'>@aditya</a>
+              </div> */}
+
+            </div>
+          </div>
+          {/* <div className="flex h-full w-full items-center justify-center ">
             <div className="grid h-full w-full gap-4 md:px-28 grid-cols-1 md:grid-cols-2 grid-rows-1 ">
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={soubhick} />
-                {/* <p className='font-semibold'>Soubhick</p> */}
+                
                 <a href='https://www.linkedin.com/in/soubhick/'>@soubhick</a>
               </div>
               <div
                 className="col-span-1 row-span-1 flex flex-col items-center justify-center hover:scale-105 transition-transform ease-in-out duration-300"
               >
                 <img className='h-[15rem] w-[15rem] rounded-full object-cover grayscale mb-1' src={ambar} />
-                {/* <p className='font-semibold'>Ambar</p> */}
+               
                 <a href='https://www.linkedin.com/in/ambar-saha-a971b3143/'>@ambar</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         

@@ -94,8 +94,8 @@ const Work = () => {
           <p className="font-bold text-[#FAF7F0] px-20 text-wrap text-5xl text-center">
              <SparklesText text="Social media" />  connects and inspires communities.
           </p>
-          <img className='absolute h-60  bottom-[5%] left-[33%] -rotate-8' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' />
-          <img className='absolute h-60  bottom-[2%] left-[33%] -rotate-12' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' />
+          {/* <img className='absolute h-60  bottom-[5%] left-[33%] -rotate-8' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' /> */}
+          {/* <img className='absolute h-60  bottom-[2%] left-[33%] -rotate-12' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' /> */}
           
             {/* <img className='absolute h-36 w-36 bottom-[9%] left-[46%] rotate-12' src='https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996901/t_1_nvyvbo.png' /> */}
             {/* <Lottie 

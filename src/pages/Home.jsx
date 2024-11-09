@@ -5,6 +5,7 @@ import Client from '../components/Client';
 import Bento from '../components/Bento';
 import HeroNew from '@/components/HeroNew';
 import Flywithus from '@/components/Flywithus';
+import { AnimatedTestimonialsDemo } from '@/components/AnimatedTestimonialsDemo';
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
       <HeroNew/>
       <Work/>
       <Service/>
-      <Client/>
+      {/* <Client/> */}
+      <AnimatedTestimonialsDemo/>
+
       {/* <Bento/> */}
       <div className='p-10'>
 

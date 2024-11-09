@@ -17,6 +17,11 @@ export default Test;
 
 // const filterOptions = ['All', 'WEB', 'UI & UX', 'GRAPHICS', 'BRANDING', 'SOCIAL MEDIA'];
 
+// https://www.makemepulse.com/
+// https://console.cloudinary.com/console/c-2f871e3b8bb6d7319c4245839b2f14/media_library/homepage
+// https://react-icons.github.io/react-icons/search/#q=love
+// https://ui.aceternity.com/components/wobble-card
+
 // const Worksection = () => {
 //   const [filter, setFilter] = useState('All');
 
