@@ -8,6 +8,7 @@ const team = [
     { id:'3',name: 'Adit Saha', ig: 'https://www.linkedin.com/in/adit-saha-a40b34212/' },
     { id:'4',name: 'Soubhick Bhattacharjee', ig: 'https://www.linkedin.com/in/soubhick/' },
     { id:'5',name: 'Ambar Saha', ig: 'https://www.linkedin.com/in/ambar-saha-a971b3143/' },
+    { id:'6',name: 'Aditya Aurodipta', ig: 'https://www.linkedin.com/in/adityaaurodipta/' },
 ]
 
 const FooterNew = () => {
@@ -18,14 +19,17 @@ const FooterNew = () => {
 
   return (
     <footer className={`${isHomePage ? 'rounded-tl-3xl rounded-tr-3xl' : ' '}  flex flex-col md:flex-row gap-5 md:gap-0 text-center items-center md:items-baseline justify-around bg-[#1b1c1d] py-10`}>
-        <div className='flex flex-col md:items-start gap-2'>
+        <div className='flex flex-col md:items-start gap-1'>
             <p className='text-white font-black text-2xl'>Artisan<span className='text-red-500 text-2xl'>Crew</span>.co</p>
+            <p className='text-white font-light text-sm'>© 2024 ArtisanCrew.co</p>
+            <p className='text-white font-light text-sm'>All rights reserved.</p>
         </div>
         <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Contact</h1>
             {/* <p className='font-normal text-gray-400 hover:text-white transition-all duration-300'>+91-999999999</p> */}
             {/* <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Linked.in</a> */}
             <a href='mailto:workwithsaumajyoti@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
+            <a href='https://calendly.com/workwithsaumajyoti/30min' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Speak with Us</a>
         </div>
         
         <div className='flex flex-col md:items-start gap-2'>

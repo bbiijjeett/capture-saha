@@ -66,8 +66,8 @@ const projects = [
 const filterOptions = ['All', 'WEB', 'UI & UX', 'GRAPHICS', 'BRANDING', 'SOCIAL MEDIA'];
 
 const Worksection = () => {
-  const { scrollY } = useScroll();
-  const scale = useTransform(scrollY, [2500, 3000], [1, 0.8]);
+  // const { scrollY } = useScroll();
+  // const scale = useTransform(scrollY, [2500, 3000], [1, 0.8]);
 
   const [filter, setFilter] = useState('All');
   const cardRefs = useRef([]);
@@ -129,7 +129,7 @@ const Worksection = () => {
       </div>
 
           
-      <motion.div style={{ scale }} className="p-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 perspective-1000">
+      <motion.div   className="p-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 perspective-1000">
         {filteredProjects.map((project, index) => (
           <div
             key={index}

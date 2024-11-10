@@ -1,4 +1,4 @@
-import React, { useEffect, useRef,useLayoutEffect  } from 'react';
+import React, { useState,useEffect, useRef,useLayoutEffect  } from 'react';
 import { gsap } from 'gsap';
 import { IoMdUnlock } from "react-icons/io";
 // import '../components/WaveText.css';
@@ -16,11 +16,6 @@ const ImageCard = ({ image }) => {
             alt="Unlocked Image"
             className="w-full h-full object-cover shadow-xl rounded-lg z-0"     
         />
-        {/* <img
-            src={image}
-            alt="Unlocked Image"
-            className="w-full h-full object-cover shadow-xl rounded-lg blur-sm group-hover:blur-none transition-all duration-300"     
-        /> */}
       </div>
     );
   };
@@ -83,25 +78,41 @@ const HeroNew = () => {
     
     }, []);
 
+    const images = [
+        'https://media.contented.ru/wp-content/uploads/2023/06/image13.png',
+        'https://img.freepik.com/free-vector/design-word-concept_23-2147844787.jpg',
+        'https://images.ctfassets.net/1o0msnomnlhl/gUno4iSEyUCqe3pAXRtE9/06088e030fc01d547e56fb0658ecedd6/shutterstock_1172906944.jpg?h=500'
+    ];
 
-    // useEffect(() => {
-    //     // GSAP animation for the wave effect
-    //     const lines = mainTextRef.current.querySelectorAll(".line");
-    //     const clipStart = "polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%)";
-    //     const clipMid = "polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%)";
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    //     gsap.fromTo(
-    //         lines,
-    //         { clipPath: clipStart },
-    //         {
-    //             clipPath: clipMid,
-    //             duration: 2,
-    //             repeat: -1,
-    //             yoyo: true,
-    //             ease: "power1.inOut",
-    //         }
-    //     );
-    // }, []);
+    const [width, setWidth] = useState("8vh"); // Default to mobile width
+
+    useEffect(() => {
+        // Function to update width based on window size
+        const updateWidth = () => {
+            if (window.innerWidth >= 768) {
+                setWidth("16vh"); // Set to 16vh for medium screens and larger
+            } else {
+                setWidth("8vh"); // Set to 8vh for small screens
+            }
+        };
+
+        // Set initial width and add event listener for resizing
+        updateWidth();
+        window.addEventListener("resize", updateWidth);
+
+        // Clean up event listener on unmount
+        return () => window.removeEventListener("resize", updateWidth);
+    }, []);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 3500); // 1s delay + 2.5s animation duration = 3.5s total
+
+        return () => clearInterval(interval);
+    }, [images.length]);
 
     return (
         <motion.section style={{ scale, opacity }}  className="relative text-white py-16 h-screen flex items-center overflow-hidden ">
@@ -110,7 +121,32 @@ const HeroNew = () => {
                     <h1 ref={headerRef} className='text-[#1b1c1d] font-black text-2xl'>Artisan<span className='text-2xl text-red-500'>Crew</span>.co</h1>
                     <h1 ref={mainTextRef} className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap flex flex-col justify-center items-center">
                         <div className="line ">Designs</div>
-                        <div className="line">That</div>
+                        <div className="line flex flex-row items-center justify-center gap-5">
+                            <p>
+                                That
+                            </p>
+                            {/* <motion.div
+                                initial={{ width: 0 }}
+                                animate={{ width: "8vw" }}
+                                transition={{ ease: [0.76, 0, 0.24, 1], duration: 1,delay:2.5 }}
+                                className="mr-1 rounded-md w-[8vw] h-[8vw] relative  bg-cover bg-[url('https://irp.cdn-website.com/91bc380f/dms3rep/multi/webworks.webp')]"
+                            ></motion.div>  */}
+                            <motion.div
+                                key={currentImageIndex} // Change key to re-trigger animation
+                                initial={{ width: 0 }}
+                                animate={{ width }}
+                                exit={{ width: 0 }}
+                                transition={{
+                                    ease: [0.76, 0, 0.24, 1],
+                                    duration: 1,
+                                    repeat: 1,
+                                    repeatType: "mirror",
+                                    repeatDelay: 1
+                                }}
+                                className="rounded-3xl h-[8vh] md:h-[16vh] relative bg-cover top-2"
+                                style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+                            ></motion.div>
+                        </div>
                         <div className="line">Woo!</div>
                     </h1>
                     <div ref={getStartedRef} className="mt-8">
