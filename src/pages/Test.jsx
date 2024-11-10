@@ -2,13 +2,15 @@ import React, { useEffect,useRef } from 'react';
 import { gsap } from 'gsap';
 import CursorImage from '@/components/CursorImage';
 import ImageTrail from '@/components/ImageTrail';
+import PhoneMockup from '@/components/PhoneMockup';
 
 const Test = () => {
 
   return (
-    <section className='bg-white h-screen'>
+    <section className='bg-white h-screen p-32'>
       {/* <CursorImage /> */}
-      <ImageTrail />
+      {/* <ImageTrail /> */}
+      <PhoneMockup />
     </section>
   );
 };
