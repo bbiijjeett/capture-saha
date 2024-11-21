@@ -34,46 +34,40 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Saumajyoti was a fantastic addition to the Rento team as our Content Creator and Video Editor. He knew just how to make our properties stand out and keep things looking top-notch. Highly recommended for any creative role,he will do a great job!",
+      name: "Rento",
+      designation: "- rental platform",
+      src: "https://res.cloudinary.com/dgtcjadsp/image/upload/v1729995997/rento_iumzky.svg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Their social media campaigns increased our engagement by 200%! We love how they creatively market our eco-friendly products.",
+      name: "Easybuy",
+      designation: "- eCommerce Store",
+      src: "https://res.cloudinary.com/dgtcjadsp/image/upload/v1729995999/easybuy_fuzwlq.svg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "They transformed our website into a dynamic, user-friendly platform. Membership signups skyrocketed, and the design perfectly reflects our energetic brand!",
+      name: "Eatit",
+      designation: "- Food Ordering App",
+      src: "https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996289/eatit_s8fxlw.svg",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Their performance marketing strategies have consistently delivered high-quality leads. We've seen a huge ROI in our digital ad spend.",
+      name: "JD Institute Of Fashion Technology Official",
+      designation: "- Fashion Institute",
+      src: "https://res.cloudinary.com/dgtcjadsp/image/upload/v1729996288/jdinstitute_eyld70.svg",
     },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+    
   ];
   return (
 
     
 
     <section className="bg-[#FAF7F0]">
-        <div className="h-fit bg-[#1B1C1D] rounded-3xl p-10 md:p-24 text-[#1B1C1D]">
+        <div className="min-h-screen bg-[#1B1C1D] rounded-3xl py-20 px-10 md:p-24 text-[#1B1C1D]">
 
             <h1 ref={testimonialsRefs} className="text-center text-4xl md:text-7xl font-bold mb-2 text-white">Testimonials</h1>
             <AnimatedTestimonials testimonials={testimonials} />

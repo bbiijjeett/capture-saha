@@ -121,7 +121,7 @@ const HeroNew = () => {
                     <h1 ref={headerRef} className='text-[#1b1c1d] font-black text-2xl'>Artisan<span className='text-2xl text-red-500'>Crew</span>.co</h1>
                     <h1 ref={mainTextRef} className="text-6xl uppercase md:text-[8rem] font-black text-black text-wrap flex flex-col justify-center items-center">
                         <div className="line ">Designs</div>
-                        <div className="line flex flex-row items-center justify-center gap-5">
+                        <div className="line flex items-center justify-center gap-5">
                             <p>
                                 That
                             </p>
@@ -143,7 +143,7 @@ const HeroNew = () => {
                                     repeatType: "mirror",
                                     repeatDelay: 1
                                 }}
-                                className="rounded-3xl h-[8vh] md:h-[16vh] relative bg-cover top-2"
+                                className="rounded-3xl h-[8vh] md:h-[16vh] relative bg-cover top-1"
                                 style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
                             ></motion.div>
                         </div>
