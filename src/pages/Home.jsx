@@ -9,7 +9,8 @@ import { AnimatedTestimonialsDemo } from '@/components/AnimatedTestimonialsDemo'
 
 const Home = () => {
   return (
-    <section className='bg-[#FAF7F0] overflow-hidden'>
+    //bg-[#FAF7F0]
+    <section className=' bg-[#FAF7F0] overflow-hidden'>
       <HeroNew/>
       <Work/>
       <Service/>
