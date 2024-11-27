@@ -25,24 +25,6 @@ const FooterNew = () => {
             <p className='text-white font-light text-sm'>All rights reserved.</p>
         </div>
         <div className='flex flex-col md:items-start gap-2'>
-            <h1 className='text-white font-semibold'>Contact</h1>
-            {/* <p className='font-normal text-gray-400 hover:text-white transition-all duration-300'>+91-999999999</p> */}
-            {/* <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Linked.in</a> */}
-            <a href='mailto:workwithsaumajyoti@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
-            <a href='https://calendly.com/workwithsaumajyoti/30min' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Speak with Us</a>
-            <a href='https://merchant.razorpay.com/policy/PNWqxHpxSB92lt/terms' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Terms and Conditions</a>
-            <a href='https://merchant.razorpay.com/policy/PNWqxHpxSB92lt/privacy' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Privacy Policy</a>
-            <a href='https://merchant.razorpay.com/policy/PNWqxHpxSB92lt/refund' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Cancellations and Refunds</a>
-            <a href='https://merchant.razorpay.com/policy/PNWqxHpxSB92lt/shipping' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Shipping Policy</a>
-        </div>
-        
-        <div className='flex flex-col md:items-start gap-2'>
-            <h1 className='text-white font-semibold'>Follow Us</h1>
-            <a href='https://www.instagram.com/artisancrewco/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
-            <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
-            {/* <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook.in</a> */}
-        </div>
-        <div className='flex flex-col md:items-start gap-2'>
             <h1 className='text-white font-semibold'>Team</h1>
             <ul className='flex flex-col md:items-start gap-2'>
                 {team.map((member)=>(
@@ -52,6 +34,30 @@ const FooterNew = () => {
                 ))}
             </ul>
         </div>
+        <div className='flex flex-col md:items-start gap-2'>
+            <h1 className='text-white font-semibold'>Contact</h1>
+            <a href='mailto:workwithsaumajyoti@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
+            <a href='https://calendly.com/workwithsaumajyoti/30min' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Speak with Us</a>
+            <h1 className='text-white font-semibold'>Follow Us</h1>
+            <a href='https://www.instagram.com/artisancrewco/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
+            <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
+            {/* <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook.in</a> */}
+        </div>
+        
+        <div className='flex flex-col md:items-start gap-2'>
+            <h1 className='text-white font-semibold'>Learn more</h1>
+            {/* <p className='font-normal text-gray-400 hover:text-white transition-all duration-300'>+91-999999999</p> */}
+            {/* <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Linked.in</a> */}
+            {/* <a href='mailto:workwithsaumajyoti@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a> */}
+            {/* <a href='https://calendly.com/workwithsaumajyoti/30min' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Speak with Us</a> */}
+            <a href='https://merchant.razorpay.com/policy/PNWqxHpxSB92lt/terms' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Terms and Conditions</a>
+            <a href='https://merchant.razorpay.com/policy/PNWqxHpxSB92lt/privacy' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Privacy Policy</a>
+            <a href='https://merchant.razorpay.com/policy/PNWqxHpxSB92lt/refund' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Cancellations and Refunds</a>
+            <a href='https://merchant.razorpay.com/policy/PNWqxHpxSB92lt/shipping' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Shipping Policy</a>
+        </div>
+        
+        
+        
     </footer>
   )
 }
