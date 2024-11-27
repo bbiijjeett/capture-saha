@@ -7,7 +7,7 @@ const LockUnlockbtn = () => {
   return (
     <a href='#ourbundles'>
       <button
-        className={`bg-red-500 text-white px-4 py-2 rounded-full font-semibold text-center flex items-center transition-transform duration-300 ease-in-out ${isLocked ? 'transform scale-100' : 'transform scale-105'}`}
+        className={`bg-[#8C52FF] text-white px-4 py-2 rounded-full font-semibold text-center flex items-center transition-transform duration-300 ease-in-out ${isLocked ? 'transform scale-100' : 'transform scale-105'}`}
         onMouseEnter={() => setIsLocked(false)}  // Unlock on hover
         onMouseLeave={() => setIsLocked(true)}   // Lock when not hovering
       > 

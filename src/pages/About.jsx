@@ -44,7 +44,7 @@ const About = () => {
 
       <div className='bg-[#FAF7F0] rounded-3xl  py-2'>
         <div className='flex flex-col gap-5 items-center justify-center'>
-          <h1 className=' text-4xl md:text-6xl lg:text-8xl font-black mt-10 transition-transform '>Artisan<span className='text-red-500 text-4xl md:text-6xl lg:text-8xl'>Crew</span>.co</h1>
+          <h1 className=' text-4xl md:text-6xl lg:text-8xl font-black mt-10 transition-transform '>Artisan<span className='text-[#8C52FF] text-4xl md:text-6xl lg:text-8xl'>Crew</span>.co</h1>
           {/* <TitleMagic /> */}
           <p className='w-[90%] md:w-full font-light text-base md:text-2xl text-center'>We are the one who bring the wave of creativity to your brand.</p>
         </div>

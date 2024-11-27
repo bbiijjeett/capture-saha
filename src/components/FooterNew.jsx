@@ -20,7 +20,7 @@ const FooterNew = () => {
   return (
     <footer className={`${isHomePage ? 'rounded-tl-3xl rounded-tr-3xl' : ' '}  flex flex-col md:flex-row gap-5 md:gap-0 text-center items-center md:items-baseline justify-around bg-[#1b1c1d] py-10`}>
         <div className='flex flex-col md:items-start gap-1'>
-            <p className='text-white font-black text-2xl'>Artisan<span className='text-red-500 text-2xl'>Crew</span>.co</p>
+            <p className='text-white font-black text-2xl'>Artisan<span className='text-[#8C52FF] text-2xl'>Crew</span>.co</p>
             <p className='text-white font-light text-sm'>© 2024 ArtisanCrew.co</p>
             <p className='text-white font-light text-sm'>All rights reserved.</p>
         </div>
@@ -34,14 +34,18 @@ const FooterNew = () => {
                 ))}
             </ul>
         </div>
-        <div className='flex flex-col md:items-start gap-2'>
-            <h1 className='text-white font-semibold'>Contact</h1>
-            <a href='mailto:workwithsaumajyoti@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
-            <a href='https://calendly.com/workwithsaumajyoti/30min' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Speak with Us</a>
-            <h1 className='text-white font-semibold'>Follow Us</h1>
-            <a href='https://www.instagram.com/artisancrewco/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
-            <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
-            {/* <a href='#' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook.in</a> */}
+        <div className='flex flex-col items-start gap-10 justify-between '>
+            <div className='flex flex-col md:items-start gap-2'>
+                <h1 className='text-white font-semibold'>Contact</h1>
+                <a href='mailto:workwithsaumajyoti@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
+                <a href='https://calendly.com/workwithsaumajyoti/30min' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Speak with Us</a>
+            </div>
+            <div className='md:flex hidden md:flex-col  md:items-start gap-2 '>
+                <h1 className='text-white font-semibold'>Follow Us</h1>
+                <a href='https://www.instagram.com/artisancrewco/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Instagram</a>
+                <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Linked.in</a>
+                {/* <a href='https://www.linkedin.com/in/saumajyoti-saha/' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>On Facebook</a> */}
+            </div>
         </div>
         
         <div className='flex flex-col md:items-start gap-2'>

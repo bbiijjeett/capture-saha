@@ -305,7 +305,7 @@ const Services = () => {
               <p className='font-normal text-lg md:text-xl'>Cost Effective Tailored Solutions</p>
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 gap-3 mb-5'>
-              <CustomButton color={'bg-red-500'} title={'Request Quote'} />
+              <CustomButton color={'bg-[#8C52FF]'} title={'Request Quote'} />
               <CustomButton url={'#flywithus'} title={'Book Discovery Session'} />
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 gap-2'>
