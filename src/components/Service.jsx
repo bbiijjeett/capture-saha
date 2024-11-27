@@ -89,13 +89,13 @@ const Service = () => {
   };
 
   return (
-    <section className="bg-[#1B1C1D]">
-      <div className="h-fit bg-[#FAF7F0] rounded-tl-3xl rounded-tr-3xl p-10 md:p-24 text-[#1B1C1D]">
+    <section  className="bg-[#1B1C1D]">
+      <div id='serviceSection'  className="h-fit bg-[#FAF7F0] rounded-tl-3xl rounded-tr-3xl p-10 md:p-24 text-[#1B1C1D]">
         <h1 ref={serviceRefs} id="serviceTag" className="text-center text-4xl md:text-7xl font-bold mb-2">Our Services</h1>
         <p ref={serviceTitleRefs} className="text-center text-lg md:text-2xl font-medium mb-5">
           We specialize in creating eye-catching visuals, modern brand identities, innovative products, and immersive websites.
         </p>
-        <div   className="h-full w-full">
+        <div  className="h-full w-full">
           <div className="flex h-full w-full items-center justify-center">
             <div className="grid h-full text-black w-full gap-4 p-2 grid-cols-4 md:grid-cols-4 grid-rows-4 md:grid-rows-8 lg:grid-rows-4">
               

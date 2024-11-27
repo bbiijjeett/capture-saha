@@ -37,7 +37,7 @@ const FooterNew = () => {
         <div className='flex flex-col items-start gap-10 justify-between '>
             <div className='flex flex-col md:items-start gap-2'>
                 <h1 className='text-white font-semibold'>Contact</h1>
-                <a href='mailto:workwithsaumajyoti@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
+                <a href='mailto:artisancrewworks@gmail.com' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>workwithsaumajyoti@gmail.com</a>
                 <a href='https://calendly.com/workwithsaumajyoti/30min' className='font-normal text-gray-400 hover:text-white transition-all duration-300'>Speak with Us</a>
             </div>
             <div className='md:flex hidden md:flex-col  md:items-start gap-2 '>

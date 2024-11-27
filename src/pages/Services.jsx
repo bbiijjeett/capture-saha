@@ -97,9 +97,27 @@ const customPackage = [
   }
 ];
 
+const Switch = ({ isOn, handleSwitch }) => {
+  return (
+    <div className='flex flex-col gap-2 mt-2'>
+      <h1 className='text-sm font-semibold text-gray-500'>Show Prices in ₹</h1>
+      <div
+        className={`relative w-10 h-5 ${isOn? 'bg-green-300':'bg-red-300'}  rounded-full p-1 flex items-center cursor-pointer`}
+        onClick={handleSwitch}
+      >
+        <div
+          className={`bg-white w-4 h-4 rounded-full shadow-md transform ${
+            isOn ? 'translate-x-5' : 'translate-x-0'
+          } transition-transform duration-300 ease-in-out`}
+        />
+      </div>
+    </div>
+  );
+}
+
 const Accordion = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
-
+  
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -134,6 +152,13 @@ const Accordion = ({ items }) => {
 
 
 const Services = () => {
+  // const [isOn, setIsOn] = useState(false); // false = Dollars, true = Rupees
+  // const handleSwitch = () => setIsOn(!isOn);
+  const [isOnSocialMedia, setIsOnSocialMedia] = useState(false); // Social Media Package
+  const [isOnLite, setIsOnLite] = useState(false); // Lite Package
+
+ 
+
   return (
     <section className='min-h-screen py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D]'>
       
@@ -260,8 +285,11 @@ const Services = () => {
           <div className='bg-white h-full md:min-h-[100vh] w-full lg:w-1/3 rounded-xl py-5'>
             <div className='flex flex-col p-5 md:p-10'>
               <p className='font-light text-base md:text-lg capitalize'>Social media package</p>
-              <h1 className='font-bold text-4xl md:text-5xl'>$399/m</h1>
+              <h1 className="font-bold text-4xl md:text-5xl">
+              {isOnSocialMedia ? '₹29,000/m' : '$399/m'}
+              </h1>
               <p className='font-normal text-lg md:text-xl'>Perfect to get started with kyte</p>
+              <Switch isOn={isOnSocialMedia} handleSwitch={() => setIsOnSocialMedia(!isOnSocialMedia)} />
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 mb-5'>
               <CustomButton url={'#flywithus'} title={'Get Started'} />
@@ -282,8 +310,11 @@ const Services = () => {
           <div className='bg-white h-full md:min-h-[100vh] w-full lg:w-1/3 rounded-xl py-5'>
             <div className='flex flex-col p-5 md:p-10'>
               <p className='font-light text-base md:text-lg capitalize'>Lite Package</p>
-              <h1 className='font-bold text-4xl md:text-5xl'>$699/m</h1>
+              <h1 className="font-bold text-4xl md:text-5xl">
+              {isOnLite ? '₹52,000/m' : '$699/m'}
+              </h1>
               <p className='font-normal text-lg md:text-xl'>For Small And Midsize Business</p>
+              <Switch isOn={isOnLite} handleSwitch={() => setIsOnLite(!isOnLite)} />
             </div>
             <div className='flex flex-col justify-center items-center px-5 md:px-10 mb-5'>
               <CustomButton url={'#flywithus'} title={'Get Started'} />

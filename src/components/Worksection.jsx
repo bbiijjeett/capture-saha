@@ -119,8 +119,8 @@ const Worksection = () => {
               key={option}
               onClick={() => setFilter(option)}
               className={`px-4 py-2 mb-2 font-semibold md:text-xl ${
-                filter === option ? ' text-red-500' : 'text-white/50'
-              }  hover:text-red-500 hover:-translate-y-1 transition duration-300`}
+                filter === option ? ' text-[#8C52FF]' : 'text-white/50'
+              }  hover:text-[#8C52FF] hover:-translate-y-1 transition duration-300`}
             >
               {option}
             </button>

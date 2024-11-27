@@ -29,6 +29,12 @@ const HeroNew = () => {
     const { scrollY } = useScroll();
     const scale = useTransform(scrollY, [0, 500], [1, 0.8]);
     const opacity = useTransform(scrollY, [0, 200], [1, 0.95 ]);
+
+    const handleScroll = (e) => {
+        e.preventDefault();
+        const target = document.querySelector('#serviceTag');
+        target.scrollIntoView({ behavior: 'smooth' });
+      };
     
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -150,7 +156,7 @@ const HeroNew = () => {
                         <div className="line">Woo!</div>
                     </h1>
                     <div ref={getStartedRef} className="mt-8">
-                        <a href="#flywithus" className="text-lg text-white hover:bg-black bg-[#8C52FF] transition-colors duration-300 px-4 py-2 rounded-full font-semibold">
+                        <a onClick={handleScroll} href="#" className="text-lg text-white hover:bg-black bg-[#8C52FF] transition-colors duration-300 px-4 py-2 rounded-full font-semibold">
                             Get Started
                         </a>
                     </div>

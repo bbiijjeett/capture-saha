@@ -1,149 +1,129 @@
-// import Footer from '@/components/Footer'
-import Flywithus from '@/components/Flywithus'
-import camera  from '../assets/img/camera.webp'
-import max  from '../assets/img/max.webp'
-import letter  from '../assets/img/letter.webp'
-import phone  from '../assets/img/phone.webp'
-import emoji from '../assets/img/emoji.webp'
-import map from '../assets/img/map.jpeg'
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import Flywithus from '@/components/Flywithus';
+import emoji from '../assets/img/emoji.webp';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-  const cameraRef = useRef(null);
-  const maxRef = useRef(null);
-  const letterRef = useRef(null);
-  const phoneRef = useRef(null);
-
-  const handleMouseEnter = (ref) => {
-    gsap.to(ref.current, { 
-      display: 'block',
-      opacity: 1, 
-      y: 0, 
-      duration: 0.5, 
-      ease: "power2.out" 
-    });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
-  const handleMouseLeave = (ref) => {
-    gsap.to(ref.current, { 
-      opacity: 0, 
-      y: 20, 
-      duration: 0.5, 
-      ease: "power2.out" 
-    });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, message } = formData;
+
+    // Create the WhatsApp URL
+    const whatsappURL = `https://wa.me/919366797368?text=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+    )}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, '_blank');
   };
 
-  return ( 
-    <section className='flex flex-col gap-5 h-full py-20 md:py-28 px-5 md:px-10  bg-[#1B1C1D] '>
-      <div className='flex-col h-[80vh] md:h-[70vh] justify-between  md:flex-row bg-[#FAF7F0]  rounded-3xl p-5 text-[#333435]  flex overflow-hidden'>
-        <div className='w-1/2 flex flex-col justify-between'>
-          <div className='hover:text-red-500 transition-all duration-300 text-7xl md:text-8xl hover:scale-95 cursor-pointer'>
-            <a href='https://wa.me/919366797368'>
-              <p className=' font-bold'>SAY</p>
-              <p className=' font-bold'>HELLO<span className='text-red-500'>.</span></p>
+  return (
+    <section className="flex flex-col gap-5 py-20 md:py-28 px-5 md:px-10 bg-[#1B1C1D]">
+      <div className="flex-col items-center md:items-stretch h-auto justify-between md:flex-row bg-[#FAF7F0] rounded-3xl p-5 text-[#333435] flex overflow-hidden">
+        <div className="w-1/2 hidden md:flex flex-col justify-between">
+          <div className="hover:text-red-500 transition-all duration-300 text-7xl md:text-8xl hover:scale-95 cursor-pointer">
+            <a href="https://wa.me/919366297461">
+              <p className="font-bold">SAY</p>
+              <p className="font-bold">
+                HELLO<span className="text-red-500">.</span>
+              </p>
             </a>
           </div>
-          <div className='hidden md:flex'>
-            <img src={emoji} className='animate-spin' alt='rotating emoji' />
+          <div className="hidden md:flex">
+            <img src={emoji} className="animate-spin" alt="rotating emoji" />
           </div>
         </div>
-  
-        <div className='w-1/2 hidden lg:flex justify-center items-center relative translate-y-32'>
-          {/* Image for Instagram */}
-          <img 
-            ref={cameraRef} 
-            className='absolute hidden opacity-0 translate-y-5' 
-            src={camera} 
-            alt="Camera" 
-            // onMouseEnter={() => handleMouseEnter(cameraRef)} 
-            // onMouseLeave={() => handleMouseLeave(cameraRef)} 
-          />
 
-          {/* Image for LinkedIn */}
-          <img 
-            ref={maxRef} 
-            className='absolute hidden opacity-0 translate-y-5' 
-            src={max} 
-            alt="Max" 
-            // onMouseEnter={() => handleMouseEnter(maxRef)} 
-            // onMouseLeave={() => handleMouseLeave(maxRef)} 
-          />
-
-          {/* Image for Email */}
-          <img 
-            ref={letterRef} 
-            className='absolute hidden opacity-0 translate-y-5' 
-            src={letter} 
-            alt="Letter" 
-            // onMouseEnter={() => handleMouseEnter(letterRef)} 
-            // onMouseLeave={() => handleMouseLeave(letterRef)} 
-          />
-
-          {/* Image for Phone */}
-          <img 
-            ref={phoneRef} 
-            className='absolute hidden opacity-0 translate-y-5' 
-            src={phone} 
-            alt="Phone" 
-            // onMouseEnter={() => handleMouseEnter(phoneRef)} 
-            // onMouseLeave={() => handleMouseLeave(phoneRef)} 
-          />
-        </div>
-
-        <div className='w-1/2 flex flex-col md:flex-col'>
-          <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-4xl'>Social</h1>
-            <a 
-              href='https://www.instagram.com/capturewithsaha/' 
-              className='font-light hover:text-red-500' 
-              onMouseEnter={() => handleMouseEnter(cameraRef)} 
-              onMouseLeave={() => handleMouseLeave(cameraRef)}
-            >
-              Instagram
-            </a>
-            <a 
-              href='https://www.linkedin.com/in/saumajyoti-saha/' 
-              className='font-light hover:text-red-500' 
-              onMouseEnter={() => handleMouseEnter(maxRef)} 
-              onMouseLeave={() => handleMouseLeave(maxRef)}
-            >
-              Linked.in
-            </a>
-            
-          </div>
-          <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-4xl'>Contact</h1>
-            <a 
-              href='mailto:workwithsaumajyoti@gmail.com' 
-              className='font-light hover:text-red-500' 
-              onMouseEnter={() => handleMouseEnter(letterRef)} 
-              onMouseLeave={() => handleMouseLeave(letterRef)}
-            >
-              workwithsaumajyoti@gmail.com
-            </a>
-            {/* <a 
-              href='#' 
-              className='font-light hover:text-red-500'   
-              onMouseEnter={() => handleMouseEnter(phoneRef)} 
-              onMouseLeave={() => handleMouseLeave(phoneRef)}
-            >
-              +91-9999999999
-            </a> */}
-            
-          </div>
-          <div className='p-2 flex flex-col gap-2'>
-            <h1 className='font-bold text-4xl'>Address</h1>
-            <p className='font-light'>Bengaluru, Karnataka</p>
-            <img className='rounded-3xl h-24 w-48 md:h-32 md:w-64 hover:scale-105 shadow-lg transition-all duration-300' src={map} />
+        <div className="w-full md:w-1/2">
+          <div className="container">
+            <div className="flex flex-col text-center w-full mb-12">
+              <h1 className="font-bold text-2xl mb-2 text-gray-900">Get in Touch</h1>
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base italic">
+                Have questions or need assistance? We&apos;re here to help.
+              </p>
+            </div>
+            <form onSubmit={handleSubmit} className="lg:w-1/2 md:w-2/3 mx-auto">
+              <div className="flex flex-wrap -m-2">
+                <div className="p-2 w-1/2">
+                  <div className="relative">
+                    <label htmlFor="name" className="leading-7 font-semibold text-sm text-gray-600">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full bg-[#FAF7F0] rounded border border-gray-300 focus:border-[#8C52FF] text-[#8C52FF] text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+                <div className="p-2 w-1/2">
+                  <div className="relative">
+                    <label htmlFor="email" className="leading-7 text-sm font-semibold text-gray-600">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full bg-[#FAF7F0] rounded border border-gray-300 focus:border-[#8C52FF] text-base outline-none text-[#8C52FF] py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+                <div className="p-2 w-full">
+                  <div className="relative">
+                    <label htmlFor="message" className="leading-7 text-sm font-semibold text-gray-600">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      className="w-full bg-[#FAF7F0] rounded border border-gray-300 focus:border-[#8C52FF] h-32 text-base outline-none text-[#8C52FF] py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    ></textarea>
+                  </div>
+                </div>
+                <div className="p-2 w-full">
+                  <button
+                    type="submit"
+                    className="flex mx-auto text-white bg-[#8C52FF] border-0 py-2 px-8 focus:outline-none hover:bg-red-500 rounded-3xl text-lg"
+                  >
+                    Send
+                  </button>
+                </div>
+                <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                  <a href="mailto:artisancrewworks@gmail.com" className="text-[#8C52FF]">
+                    artisancrewworks@gmail.com
+                  </a>
+                  <p className="leading-normal my-1">Bengaluru, Karnataka</p>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      
-      <Flywithus/>
+      <Flywithus />
     </section>
-  )
-}
+  );
+};
 
 export default Contact;
